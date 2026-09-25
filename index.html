@@ -10,7 +10,7 @@ a{color:#0b62c4}code{background:#f1f5f9;padding:1px 4px;border-radius:3px;font-s
 </style></head><body>
 <h1>TrueMile EV — Privacy Policy</h1>
 
-<p><strong>Effective date: August 9, 2026</strong></p>
+<p><strong>Effective date: September 12, 2026</strong></p>
 
 <p>TrueMile EV (&quot;the app&quot;) is built and operated by Gate Engineering LLC. This policy describes</p>
 <p>exactly what data the app handles, where it goes, and how you can delete it. It is written to be</p>
@@ -22,6 +22,7 @@ a{color:#0b62c4}code{background:#f1f5f9;padding:1px 4px;border-radius:3px;font-s
 <li>Your data is used to run <strong>your own</strong> trip and charging history. Nothing else.</li>
 <li><strong>No ads. No sale of data. No third-party analytics or tracking SDKs.</strong></li>
 <li>Your data lives in the app&#x27;s own private cloud database, keyed to your account.</li>
+<li>Subscriptions are paid through Google Play; the app never sees your card or payment details.</li>
 <li>Deleting your account in the app deletes your cloud data.</li>
 </ul>
 
@@ -34,6 +35,7 @@ a{color:#0b62c4}code{background:#f1f5f9;padding:1px 4px;border-radius:3px;font-s
 <tr><td><strong>Trip GPS routes</strong> (location breadcrumbs while driving, odometer, speed, energy use)</td><td>Automatic trip logging and per-trip maps — the core feature of the app.</td></tr>
 <tr><td><strong>Charge sessions</strong> (charger location, energy delivered, price you enter, timestamps)</td><td>Your charging history, cost tracking, and charging-curve analytics.</td></tr>
 <tr><td><strong>Crash reports</strong> (stack trace, app version, device model, a random install identifier)</td><td>Fixing bugs. The identifier is random — it is not your email, account, or advertising ID.</td></tr>
+<tr><td><strong>Subscription records</strong> (Google Play purchase token, order ID, product and plan, status, expiry, and Google Play&#x27;s own record of the subscription, which includes the country of purchase, the start date and any cancellation reason you give Google)</td><td>Unlocking the Pro or Max plan you bought. See <em>Subscriptions and purchases</em> below.</td></tr>
 </table>
 
 <h2>Where it lives</h2>
@@ -84,6 +86,33 @@ a{color:#0b62c4}code{background:#f1f5f9;padding:1px 4px;border-radius:3px;font-s
 
 <p>None of these are analytics or advertising services.</p>
 
+<h2>Subscriptions and purchases</h2>
+
+<p>TrueMile EV offers Pro and Max subscriptions, sold through Google Play.</p>
+
+<ul>
+<li><strong>Google Play handles the payment.</strong> Your card or other payment method, billing address, and
+  the charge itself are processed entirely by Google under Google&#x27;s own privacy policy. The app
+  never sees, receives, or stores card numbers or any other payment details.</li>
+<li><strong>What the app stores</strong> so it can unlock the plan you bought, in the same private database as
+  the rest of your account: the Google Play purchase token, the order ID, the product and plan
+  (for example, Pro billed annually), the subscription&#x27;s state (active, in a grace period,
+  canceled, expired, and so on), whether it began with a trial, whether it renews automatically,
+  and its expiry or renewal date — and Google Play&#x27;s own record of the subscription as Google
+  returns it, which includes the country of purchase, the start date and, if you cancel, any
+  reason you give Google. The app checks these with Google Play to confirm the subscription is
+  genuine and current.</li>
+<li><strong>What the app sends to Google</strong> with a purchase: a one-way hash (SHA-256) of your account ID,
+  passed as Google Play&#x27;s &quot;obfuscated account ID&quot;, which Google uses to detect fraud and abuse.
+  It cannot be turned back into your account ID and never includes your email or name.</li>
+<li><strong>Status updates from Google</strong>: when a subscription renews, is canceled, refunded, or expires,
+  Google Play notifies the app&#x27;s server, which uses the notice only to keep your plan current.</li>
+<li><strong>Canceling</strong>: manage or cancel your subscription in the Google Play Store app → Payments &amp;
+  subscriptions → Subscriptions. <strong>Deleting your TrueMile account does not cancel a Google Play
+  subscription</strong> — cancel it in Google Play first. The app&#x27;s subscription records are deleted
+  with your account; Google keeps its own purchase records under its own policy.</li>
+</ul>
+
 <h2>What the app does NOT do</h2>
 
 <ul>
@@ -103,6 +132,7 @@ a{color:#0b62c4}code{background:#f1f5f9;padding:1px 4px;border-radius:3px;font-s
 <p>  email, trips, routes, GPS locations, home coordinates, charging locations, prices and costs,</p>
 <p>  notes, settings, and generated reports.</p>
 <ul>
+<li>Deleting your account does not cancel a Google Play subscription; cancel it in Google Play.</li>
 <li>Uninstalling the app removes all local data from the device.</li>
 <li>Crash reports and anonymous community price contributions are retained only in aggregate and are</li>
 </ul>
@@ -129,6 +159,16 @@ a{color:#0b62c4}code{background:#f1f5f9;padding:1px 4px;border-radius:3px;font-s
 <p>payment information; any trip or route; or any free-text notes — the retained record has no</p>
 <p>fields for them. If you also want this vehicle history removed, email us with the VIN before</p>
 <p>deleting your account and we will exclude it.</p>
+
+<p><strong>One code is kept so the introductory period can&#x27;t be restarted.</strong> New accounts get an</p>
+<p>introductory period during which every feature is open. To keep that to one per vehicle, we store</p>
+<p>a one-way code derived from the vehicle&#x27;s VIN and from the OBD adapter&#x27;s address, together with a</p>
+<p>one-way code for the account that used it. The codes are irreversible: they contain no VIN, no</p>
+<p>adapter address and no account identifier, and nothing can be read back out of them — they are</p>
+<p>only ever compared for equality, so the single question they answer is &quot;has this vehicle already</p>
+<p>had its introductory period, and was it this same account?&quot; They are kept for up to 90 days after</p>
+<p>they are created, including past account deletion — that is the point of them — and are then</p>
+<p>deleted. They are never used for advertising, profiling or any other purpose.</p>
 
 <h2>Children</h2>
 
