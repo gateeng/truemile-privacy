@@ -1,79 +1,100 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>TrueMile EV — Delete Your Account &amp; Data</title>
+<meta name="description" content="How to delete your TrueMile EV account and data, what is removed, and what is retained.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="https://gateeng.com/truemileev/assets/icon.png">
 <style>
-body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;color:#1a2332;max-width:760px;margin:0 auto;padding:24px 20px 60px}
-h1{font-size:1.6em;border-bottom:2px solid #0e2a47;padding-bottom:8px}h2{font-size:1.2em;margin-top:1.6em;color:#0e2a47}h3{font-size:1.05em}
-table{border-collapse:collapse;width:100%;font-size:.92em}th,td{border:1px solid #cbd5e1;padding:6px 10px;text-align:left;vertical-align:top}th{background:#f1f5f9}
-a{color:#0b62c4}code{background:#f1f5f9;padding:1px 4px;border-radius:3px;font-size:.92em}
-ol.steps li{margin-bottom:6px}
-.box{border:1px solid #cbd5e1;border-radius:8px;padding:12px 16px;margin:14px 0;background:#f8fafc}
-@media(prefers-color-scheme:dark){body{background:#0d1420;color:#dbe4f0}h1{border-color:#4da3ff}h2{color:#7db8f0}th{background:#182233}th,td{border-color:#2c3a50}a{color:#5aa5f5}code{background:#182233}.box{background:#141d2e;border-color:#2c3a50}}
+:root{--bg:#070c16;--card:#101a2c;--ink:#e8eef7;--muted:#8fa1b8;--line:#1d2b42;--cyan:#37b6ff;--green:#00e676;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;
+font-family:-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;background:var(--bg);color:var(--ink);
+background-image:
+ radial-gradient(900px 500px at 70% -10%,rgba(30,110,190,.22),transparent 60%),
+ radial-gradient(700px 420px at 10% 30%,rgba(0,180,120,.07),transparent 60%),
+ url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"><g stroke="%23223a5c" stroke-width="1" opacity=".28"><path d="M0 24 H28 V52 H72 M36 0 V16 H60"/><circle cx="28" cy="24" r="2" fill="%23223a5c" stroke="none"/><circle cx="60" cy="16" r="2" fill="%23223a5c" stroke="none"/></g></svg>');}
+.wrap{width:100%;max-width:820px;margin-left:auto;margin-right:auto;padding:0 22px}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 0;font-size:.92em}
+.bar a{color:var(--muted)}.bar a:hover{color:var(--cyan)}
+h1{font-size:clamp(1.5em,4vw,2em);margin:28px 0 6px;letter-spacing:.3px;font-weight:800}
+h1 span{background:linear-gradient(92deg,var(--cyan),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+.eff{color:var(--muted);margin:0 0 6px;font-size:.95em}
+.rule{height:2px;border-radius:2px;background:linear-gradient(90deg,var(--cyan),var(--green));margin:14px 0 26px}
+h2{font-size:1.12em;margin:2em 0 .5em;color:var(--cyan);letter-spacing:.3px}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.25em}li{margin-bottom:.4em}
+strong{color:#fff}
+table{border-collapse:collapse;width:100%;font-size:.94em;margin:0 0 1.2em;background:rgba(16,26,44,.5);border-radius:10px;overflow:hidden}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:rgba(55,182,255,.08);color:var(--ink);font-weight:600}
+td{color:var(--muted)}td strong{color:var(--ink)}
+.box{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 1.2em;background:linear-gradient(180deg,rgba(30,110,190,.10),rgba(16,26,44,.4))}
+.box ol{margin:0;padding-left:1.2em}
+.note{border-left:3px solid var(--green);padding:2px 0 2px 14px;margin:0 0 1.2em;color:var(--ink)}
+footer{margin-top:auto;padding:46px 0 36px;color:var(--muted);font-size:.85em;text-align:center}
+footer a{color:var(--muted);margin:0 8px}footer a:hover{color:var(--cyan)}
+@media(max-width:560px){.bar{flex-direction:column;align-items:flex-start;gap:6px}}
 </style></head><body>
-<h1>TrueMile EV — Delete Your Account &amp; Data</h1>
+<header class="bar wrap">
+  <a href="https://gateeng.com/truemileev/">&larr; TrueMile EV</a>
+  <a href="https://gateeng.com">Gate Engineering LLC</a>
+</header>
+<main class="wrap">
+<h1>TrueMile <span>EV</span> — Delete Your Account &amp; Data</h1>
+<div class="rule"></div>
 
-<p><strong>TrueMile EV</strong> is built and operated by Gate Engineering LLC. This page explains how to
-delete your account and data, exactly what is deleted, and the small vehicle-only record that can
-be retained. The full privacy policy is at
-<a href="https://gateeng.com/truemile-privacy/">gateeng.com/truemile-privacy</a>.</p>
+<p><strong>TrueMile EV</strong> is built and operated by Gate Engineering LLC. This page explains how to delete your account and data, exactly what is deleted, and the small vehicle-only record that can be retained. The full privacy policy is at <a href="https://gateeng.com/truemile-privacy/">gateeng.com/truemile-privacy</a>.</p>
 
 <h2>Delete your account (in the app)</h2>
-
 <div class="box">
-<ol class="steps">
+<ol>
 <li>Open <strong>TrueMile EV</strong> and tap the <strong>Settings</strong> gear.</li>
 <li>Tap <strong>My Account</strong>.</li>
 <li>Tap <strong>Delete account</strong> and confirm.</li>
 </ol>
 </div>
-
 <p>Deletion runs immediately and is <strong>permanent</strong> — there is no recovery or grace period.</p>
-
-<p><strong>Have a Pro or Max subscription?</strong> Deleting your account does <strong>not</strong> cancel a Google Play subscription — cancel it first in the Google Play Store app under Payments &amp; subscriptions → Subscriptions, or it will keep renewing.</p>
+<p class="note"><strong>Have a Pro or Max subscription?</strong> Deleting your account does <strong>not</strong> cancel a Google Play subscription — cancel it first in the Google Play Store app under Payments &amp; subscriptions → Subscriptions, or it will keep renewing.</p>
 
 <h2>Can't sign in, or already uninstalled the app?</h2>
-
-<p>Email <strong><a href="mailto:support@gateeng.com?subject=Delete%20my%20TrueMile%20EV%20account">support@gateeng.com</a></strong>
-from the email address your account uses, with the subject &quot;Delete my TrueMile EV account&quot;.
-The deletion is performed for you, with a confirmation reply when done.</p>
+<p>Email <strong><a href="mailto:support@gateeng.com?subject=Delete%20my%20TrueMile%20EV%20account">support@gateeng.com</a></strong> from the email address your account uses, with the subject "Delete my TrueMile EV account". The deletion is performed for you, with a confirmation reply when done.</p>
 
 <h2>What is deleted, and what can be retained</h2>
-
 <table>
 <tr><th>Deleted immediately with your account</th><th>Retained</th></tr>
 <tr><td>
-Your sign-in identity (email, name) and account ID · every trip and its GPS route ·
-charging sessions and their locations, including your home charger location · all prices,
-costs, and rates you entered · settings, saved trailers, and paired-adapter details ·
-generated mileage reports · subscription records held by the app
+Your sign-in identity (email, name) and account ID · every trip and its GPS route · charging sessions and their locations, including your home charger location · all prices, costs, and rates you entered · settings, saved trailers, and paired-adapter details · generated mileage reports · subscription records held by the app
 </td><td>
-<strong>An anonymized vehicle service history, keyed only to the vehicle's VIN</strong> — like a service
-book that follows the car to its next owner: vehicle specs, day-level charging facts, battery
-state-of-health, diagnostic codes, and tire records. It has no fields for your name, email,
-account, locations, routes, prices, or notes, so it cannot be linked back to you.
-<em>Don't want it kept? Email us the VIN before deleting your account and it is removed too.</em>
+<strong>An anonymized vehicle service history, keyed only to the vehicle's VIN</strong> — like a service book that follows the car to its next owner: vehicle specs, day-level charging facts, battery state-of-health, diagnostic codes, and tire records. It has no fields for your name, email, account, locations, routes, prices, or notes, so it cannot be linked back to you. <em>Don't want it kept? Email us the VIN before deleting your account and it is removed too.</em>
 <br><br>
-Anonymous community price contributions (never account-linked; expire automatically within
-14 days) and crash reports (identified only by a random install ID, never your account).
+An irreversible code derived from the VIN and adapter address, kept up to 90 days so the introductory period can't be restarted on the same vehicle.
+<br><br>
+Anonymous community price contributions (never account-linked; expire automatically within 14 days) and crash reports (identified only by a random install ID, never your account).
 </td></tr>
 </table>
-
 <p>Data on the phone itself (local database, settings, logs) is removed by uninstalling the app.</p>
 
 <h2>Delete some data without closing your account</h2>
-
 <ul>
-<li><strong>Individual trips</strong>: open the trip in the app and delete it — the cloud copy is
-removed as well.</li>
-<li><strong>Community price contributions</strong>: turn off in Settings → <strong>My Account</strong> at any
-time (past contributions are anonymous and expire on their own within 14 days).</li>
-<li><strong>Anything else</strong> (for example a specific charging session): email
-<a href="mailto:support@gateeng.com">support@gateeng.com</a> from your account email
-and it is removed for you.</li>
+<li><strong>Individual trips</strong>: open the trip in the app and delete it — the cloud copy is removed as well.</li>
+<li><strong>Community price contributions</strong>: turn off in Settings → <strong>My Account</strong> at any time (past contributions are anonymous and expire on their own within 14 days).</li>
+<li><strong>Anything else</strong> (for example a specific charging session): email <a href="mailto:support@gateeng.com">support@gateeng.com</a> from your account email and it is removed for you.</li>
 </ul>
 
 <h2>Contact</h2>
+<p>Any question about deletion or this page: <strong><a href="mailto:support@gateeng.com">support@gateeng.com</a></strong><br>
+Gate Engineering LLC, 2501 Chatham Rd 8139, Springfield, IL 62704, USA</p>
 
-<p>Any question about deletion or this page: <strong><a href="mailto:support@gateeng.com">support@gateeng.com</a></strong></p>
-
+</main>
+<footer class="wrap">
+  <div>
+    <a href="https://gateeng.com/truemile-privacy/">Privacy</a>·
+    <a href="https://gateeng.com/truemile-terms/">Terms</a>·
+    <a href="https://gateeng.com/truemile-privacy/delete/">Delete account</a>·
+    <a href="https://gateeng.com">Gate Engineering</a>
+  </div>
+  <div style="margin-top:10px">© 2026 Gate Engineering LLC · 2501 Chatham Rd 8139, Springfield, IL 62704 · (331) 224-4919</div>
+</footer>
 </body></html>
