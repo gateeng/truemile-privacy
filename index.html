@@ -55,7 +55,7 @@ th{background:rgba(14,111,168,.08)}
 </header>
 <main class="wrap">
 <h1>TrueMile <span>EV</span> — Privacy Policy</h1>
-<p class="eff">Effective date: September 29, 2026</p>
+<p class="eff">Effective date: September 30, 2026</p>
 <div class="rule"></div>
 
 <p>TrueMile EV ("the app") is built and operated by Gate Engineering LLC. This policy describes exactly what data the app handles, where it goes, and how you can delete it. It is written to be read, not skimmed — there is nothing hidden in it.</p>
@@ -77,7 +77,8 @@ th{background:rgba(14,111,168,.08)}
 <tr><td><strong>Vehicle VIN and vehicle specs</strong> (make, model, year, battery details; optional door-jamb label photos you choose to capture)</td><td>Identifies your vehicle so your trips, charges, and efficiency stats are computed for the right car.</td></tr>
 <tr><td><strong>Trip GPS routes</strong> (location breadcrumbs while driving, odometer, speed, energy use)</td><td>Automatic trip logging and per-trip maps — the core feature of the app.</td></tr>
 <tr><td><strong>Charge sessions</strong> (charger location, energy delivered, price you enter, timestamps)</td><td>Your charging history, cost tracking, and charging-curve analytics.</td></tr>
-<tr><td><strong>Crash reports</strong> (stack trace, app version, device model, a random install identifier)</td><td>Fixing bugs. The identifier is random — it is not your email, account, or advertising ID.</td></tr>
+<tr><td><strong>Crash reports</strong> (stack trace, app version, device model, a random install identifier)</td><td>Fixing bugs. The identifier is random — it is not your email, account, or advertising ID. Deleted after 90 days.</td></tr>
+<tr><td><strong>App opens</strong> (one record per day on which your Board figures are loaded while you are signed in, in the app's Board or on the web dashboard: the date, how many times they were loaded that day, and the time of the last one)</td><td>Showing that the app is in use, and counting active testers. Kept with your account and deleted after 13 months.</td></tr>
 <tr><td><strong>Subscription records</strong> (Google Play purchase token, order ID, product and plan, status, expiry, and Google Play's own record of the subscription, which includes the country of purchase, the start date and any cancellation reason you give Google)</td><td>Unlocking the Pro or Max plan you bought. See <em>Subscriptions and purchases</em> below.</td></tr>
 </table>
 
@@ -129,7 +130,7 @@ th{background:rgba(14,111,168,.08)}
 <li><strong>What the app stores</strong> so it can unlock the plan you bought, in the same private database as the rest of your account: the Google Play purchase token, the order ID, the product and plan (for example, Pro billed annually), the subscription's state (active, in a grace period, canceled, expired, and so on), whether it began with a trial, whether it renews automatically, and its expiry or renewal date — and Google Play's own record of the subscription as Google returns it, which includes the country of purchase, the start date and, if you cancel, any reason you give Google. The app checks these with Google Play to confirm the subscription is genuine and current.</li>
 <li><strong>What the app sends to Google</strong> with a purchase: a one-way hash (SHA-256) of your account ID, passed as Google Play's "obfuscated account ID", which Google uses to detect fraud and abuse. It cannot be turned back into your account ID and never includes your email or name.</li>
 <li><strong>Status updates from Google</strong>: when a subscription renews, is canceled, refunded, or expires, Google Play notifies the app's server, which uses the notice only to keep your plan current.</li>
-<li><strong>Complimentary plans</strong> (the founder offer, and plans given to testers) are granted by us and involve no payment. For a founder place we record which account holds it, the vehicle type, a one-way code made from the VIN that qualified (not the VIN itself), and when that car first logged a drive or charge, so the places can be counted and checked. If the account is deleted, the place stays counted: the vehicle type, the one-way code and the date are kept without any link to you, so the same car cannot take a second place.</li>
+<li><strong>Complimentary plans</strong> (for example, plans given to testers) are granted by us and involve no payment; the plan is recorded on your account like any other plan.</li>
 <li><strong>Canceling</strong>: manage or cancel your subscription in the Google Play Store app → Payments &amp; subscriptions → Subscriptions. <strong>Deleting your TrueMile account does not cancel a Google Play subscription</strong> — cancel it in Google Play first. The app's subscription records are deleted with your account; Google keeps its own purchase records under its own policy.</li>
 </ul>
 
@@ -143,11 +144,16 @@ th{background:rgba(14,111,168,.08)}
 
 <h2>Retention and deletion</h2>
 <ul>
-<li>Your cloud data is kept for as long as you keep your account.</li>
+<li>Your cloud data is kept for as long as you keep your account, except where a shorter period is stated below.</li>
 <li><strong>Settings → Delete account</strong> in the app, or <strong>Account → Delete account</strong> on the web dashboard, permanently removes your personal cloud data — your identity, email, trips, routes, GPS locations, home coordinates, charging locations, prices and costs, notes, settings, and generated reports.</li>
 <li>Deleting your account does not cancel a Google Play subscription; cancel it in Google Play.</li>
 <li>Uninstalling the app removes all local data from the device.</li>
-<li>Crash reports and anonymous community price contributions are retained only in aggregate and are not linked to a deleted account.</li>
+<li>Crash reports carry only a random install identifier, never your account, and are deleted after 90 days.</li>
+<li>Anonymous community price contributions are never linked to your account and expire automatically within 14 days.</li>
+<li>The daily app-open records described above are deleted after 13 months, or with your account if you delete it sooner.</li>
+<li>Sign-ups whose email address is never confirmed are deleted after 30 days.</li>
+<li><strong>Backups.</strong> Our database host keeps backups for up to 7 days, so data you delete can remain in a backup until that backup rolls off.</li>
+<li>When you delete your account, we keep its random account ID and the time of deletion for 35 days, and nothing else, so that if we ever had to restore a backup we could delete the account again.</li>
 </ul>
 
 <p><strong>The vehicle's health record stays with the vehicle.</strong> When you delete your account, an anonymized battery and condition history is retained, keyed only to the vehicle's VIN — like a service book that follows the car to its next owner. It contains vehicle facts only:</p>
