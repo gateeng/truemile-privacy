@@ -94,7 +94,7 @@ th{background:rgba(14,111,168,.08)}
 <ul>
 <li><strong>Charger directories</strong> (NREL / Open Charge Map): the map region you are viewing, to list nearby chargers.</li>
 <li><strong>Charger photos</strong> (Open Charge Map): when you open a charging station's details on your car's screen (Android Auto), its photos load from Open Charge Map by station ID. As with any web request, Open Charge Map's server sees your device's IP address.</li>
-<li><strong>Routing</strong> (OSRM routing software, on a routing server we operate or on the public OSRM server): route coordinates, to draw and time your planned route and to align recorded trips to roads.</li>
+<li><strong>Routing</strong> (TrueMile's routing service, run for us by Simple Routing on servers in Germany): the coordinates a route connects (its start, end and any stops, or points along a recorded trip) — never your account or identity — to draw and time your planned route and to align recorded trips to roads. Route requests pass through our own server first, so Simple Routing receives only the coordinates, not your device's IP address. Route coordinates are therefore sent to, and processed on, Simple Routing's servers in Germany. Simple Routing keeps copies of route requests for 24 hours and its backups for 30 days, then deletes them. Our own server counts how many routes each account asks for per hour, so that no single account can use up the routing service for everyone; those counts contain no coordinates or places.</li>
 <li><strong>Map tiles</strong> (OpenFreeMap): the map area you are viewing, to draw the map itself.</li>
 <li><strong>Address search</strong> (your phone's built-in place search, which on most Android phones is provided by Google): the destination text you type, to suggest places.</li>
 <li><strong>Charger naming</strong> (the NREL and Open Charge Map charger directories): the coordinates of a charger you arrive at, to suggest the station's network for the session.</li>
@@ -149,6 +149,9 @@ th{background:rgba(14,111,168,.08)}
 <li>Deleting your account does not cancel a Google Play subscription; cancel it in Google Play.</li>
 <li>Uninstalling the app removes all local data from the device.</li>
 <li>Crash reports carry only a random install identifier, never your account, and are deleted after 90 days.</li>
+<li>Route requests (coordinates only, never your account) are kept by our routing provider, Simple Routing, for 24 hours; its backups roll off after 30 days.</li>
+<li>Our database host's request logs can include a route's coordinates (they are part of the request's web address) and the account that asked for it; those logs are kept for up to 7 days.</li>
+<li>The per-account hourly route counts are deleted after 3 days, whether or not you delete your account.</li>
 <li>Anonymous community price contributions are never linked to your account and expire automatically within 14 days.</li>
 <li>The daily app-open records described above are deleted after 13 months, or with your account if you delete it sooner.</li>
 <li>Sign-ups whose email address is never confirmed are deleted after 30 days.</li>
