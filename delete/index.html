@@ -5,6 +5,12 @@
 <meta name="description" content="How to delete your TrueMile EV account and data, what is removed, and what is retained.">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="https://gateeng.com/truemileev/assets/icon.png">
+<link rel="alternate" hreflang="en" href="https://gateeng.com/truemile-privacy/delete/">
+<link rel="alternate" hreflang="fr" href="https://gateeng.com/truemile-privacy/delete/fr/">
+<link rel="alternate" hreflang="es" href="https://gateeng.com/truemile-privacy/delete/es/">
+<link rel="alternate" hreflang="de" href="https://gateeng.com/truemile-privacy/delete/de/">
+<link rel="alternate" hreflang="it" href="https://gateeng.com/truemile-privacy/delete/it/">
+<link rel="alternate" hreflang="x-default" href="https://gateeng.com/truemile-privacy/delete/">
 <style>
 :root{--bg:#070c16;--card:#101a2c;--ink:#e8eef7;--muted:#8fa1b8;--line:#1d2b42;--cyan:#37b6ff;--green:#00e676;color-scheme:dark light}
 *{box-sizing:border-box}
@@ -18,6 +24,9 @@ background-image:
 a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
 .bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 0;font-size:.92em}
 .bar a{color:var(--muted)}.bar a:hover{color:var(--cyan)}
+.langs{display:flex;flex-wrap:wrap;gap:0 16px;padding-top:8px;font-size:.88em}
+.langs a{color:var(--muted);padding:3px 0}.langs a:hover{color:var(--cyan)}
+.langs a[aria-current="page"]{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--cyan);text-underline-offset:4px}
 h1{font-size:clamp(1.5em,4vw,2em);margin:28px 0 6px;letter-spacing:.3px;font-weight:800}
 h1 span{background:linear-gradient(92deg,var(--cyan),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
 .eff{color:var(--muted);margin:0 0 6px;font-size:.95em}
@@ -53,6 +62,13 @@ th{background:rgba(14,111,168,.08)}
   <a href="https://gateeng.com/truemileev/">&larr; TrueMile EV</a>
   <a href="https://gateeng.com">Gate Engineering LLC</a>
 </header>
+<nav class="langs wrap" aria-label="Language" translate="no">
+  <a href="https://gateeng.com/truemile-privacy/delete/" hreflang="en" lang="en" aria-current="page">English</a>
+  <a href="https://gateeng.com/truemile-privacy/delete/fr/" hreflang="fr" lang="fr">Français</a>
+  <a href="https://gateeng.com/truemile-privacy/delete/es/" hreflang="es" lang="es">Español</a>
+  <a href="https://gateeng.com/truemile-privacy/delete/de/" hreflang="de" lang="de">Deutsch</a>
+  <a href="https://gateeng.com/truemile-privacy/delete/it/" hreflang="it" lang="it">Italiano</a>
+</nav>
 <main class="wrap">
 <h1>TrueMile <span>EV</span> — Delete Your Account &amp; Data</h1>
 <div class="rule"></div>
@@ -85,13 +101,13 @@ th{background:rgba(14,111,168,.08)}
 <table>
 <tr><th>Deleted immediately with your account</th><th>Retained</th></tr>
 <tr><td>
-Your sign-in identity (email, name) and account ID · every trip and its GPS route · charging sessions and their locations, including your home charger location · all prices, costs, and rates you entered · settings, saved trailers, and paired-adapter details · generated mileage reports · subscription records held by the app
+Your sign-in identity (email, name, Google sign-in details) and account ID · sign-in records (IP address and device type) · every trip and its GPS route · charging sessions and their locations, including your home charger location · all prices, costs, and rates you entered · your notes · saved places · settings, saved trailers, and paired-adapter details · generated mileage reports · subscription records held by the app
 </td><td>
-<strong>An anonymized vehicle service history, keyed only to the vehicle's VIN</strong> — like a service book that follows the car to its next owner: vehicle specs, day-level charging facts, battery state-of-health, diagnostic codes, and tire records. It has no fields for your name, email, account, locations, routes, prices, or notes, so it cannot be linked back to you. <em>Don't want it kept? Email us the VIN before deleting your account and it is removed too.</em>
+<strong>A vehicle service history, keyed to the vehicle's VIN</strong> — like a service book that follows the car to its next owner: vehicle specs and the details read from the door-jamb label, day-level charging facts, battery state-of-health, diagnostic codes, and tire records. It holds no name, email, account, locations, routes, prices, or notes, but it is not anonymous: a VIN identifies one vehicle, and others can link a VIN to its registered owner. <em>Don't want it kept? Email us the VIN and we delete it once your account deletion has run (the record is only created then, so a request sent before you delete is carried out after the deletion has run).</em>
 <br><br>
-An irreversible code derived from the VIN and adapter address, kept up to 90 days so the introductory period can't be restarted on the same vehicle.
+A one-way code computed with a secret key from the VIN and adapter address (it contains neither, and cannot be turned back into them without that key), kept up to 90 days so the introductory period can't be restarted on the same vehicle.
 <br><br>
-Anonymous community price contributions (never account-linked; expire automatically within 14 days) and crash reports (identified only by a random install ID, never your account; deleted after 90 days).
+Community price contributions (under a coded identifier, never your email, account ID or VIN; expire automatically within 14 days), crash reports (identified only by a random install ID, never your account; deleted after 90 days), and our database host's request logs (each request's IP address and web address, which can include the VIN or a record's ID; kept up to 7 days).
 </td></tr>
 </table>
 <p>Data on the phone itself (local database, settings, logs) is removed by uninstalling the app.</p>
@@ -99,7 +115,7 @@ Anonymous community price contributions (never account-linked; expire automatica
 <h2>Delete some data without closing your account</h2>
 <ul>
 <li><strong>Individual trips</strong>: open the trip in the app and delete it — the cloud copy is removed as well.</li>
-<li><strong>Community price contributions</strong>: turn off in Settings → <strong>My Account</strong> at any time (past contributions are anonymous and expire on their own within 14 days).</li>
+<li><strong>Community price contributions</strong>: turn off in Settings → <strong>My Account</strong> at any time (past contributions carry only a coded identifier and expire on their own within 14 days).</li>
 <li><strong>Anything else</strong> (for example a specific charging session): email <a href="mailto:support@gateeng.com">support@gateeng.com</a> from your account email and it is removed for you.</li>
 </ul>
 

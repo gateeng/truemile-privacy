@@ -5,6 +5,12 @@
 <meta name="description" content="How TrueMile EV handles your data: what is collected, where it lives, and how to delete it.">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="https://gateeng.com/truemileev/assets/icon.png">
+<link rel="alternate" hreflang="en" href="https://gateeng.com/truemile-privacy/">
+<link rel="alternate" hreflang="fr" href="https://gateeng.com/truemile-privacy/fr/">
+<link rel="alternate" hreflang="es" href="https://gateeng.com/truemile-privacy/es/">
+<link rel="alternate" hreflang="de" href="https://gateeng.com/truemile-privacy/de/">
+<link rel="alternate" hreflang="it" href="https://gateeng.com/truemile-privacy/it/">
+<link rel="alternate" hreflang="x-default" href="https://gateeng.com/truemile-privacy/">
 <style>
 :root{--bg:#070c16;--card:#101a2c;--ink:#e8eef7;--muted:#8fa1b8;--line:#1d2b42;--cyan:#37b6ff;--green:#00e676;color-scheme:dark light}
 *{box-sizing:border-box}
@@ -18,6 +24,9 @@ background-image:
 a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
 .bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 0;font-size:.92em}
 .bar a{color:var(--muted)}.bar a:hover{color:var(--cyan)}
+.langs{display:flex;flex-wrap:wrap;gap:0 16px;padding-top:8px;font-size:.88em}
+.langs a{color:var(--muted);padding:3px 0}.langs a:hover{color:var(--cyan)}
+.langs a[aria-current="page"]{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--cyan);text-underline-offset:4px}
 h1{font-size:clamp(1.5em,4vw,2em);margin:28px 0 6px;letter-spacing:.3px;font-weight:800}
 h1 span{background:linear-gradient(92deg,var(--cyan),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
 .eff{color:var(--muted);margin:0 0 6px;font-size:.95em}
@@ -53,64 +62,88 @@ th{background:rgba(14,111,168,.08)}
   <a href="https://gateeng.com/truemileev/">&larr; TrueMile EV</a>
   <a href="https://gateeng.com">Gate Engineering LLC</a>
 </header>
+<nav class="langs wrap" aria-label="Language" translate="no">
+  <a href="https://gateeng.com/truemile-privacy/" hreflang="en" lang="en" aria-current="page">English</a>
+  <a href="https://gateeng.com/truemile-privacy/fr/" hreflang="fr" lang="fr">Français</a>
+  <a href="https://gateeng.com/truemile-privacy/es/" hreflang="es" lang="es">Español</a>
+  <a href="https://gateeng.com/truemile-privacy/de/" hreflang="de" lang="de">Deutsch</a>
+  <a href="https://gateeng.com/truemile-privacy/it/" hreflang="it" lang="it">Italiano</a>
+</nav>
 <main class="wrap">
 <h1>TrueMile <span>EV</span> — Privacy Policy</h1>
-<p class="eff">Effective date: September 30, 2026</p>
+<p class="eff">Effective date: October 1, 2026</p>
 <div class="rule"></div>
 
-<p>TrueMile EV ("the app") is built and operated by Gate Engineering LLC. This policy describes exactly what data the app handles, where it goes, and how you can delete it. It is written to be read, not skimmed — there is nothing hidden in it.</p>
+<p>TrueMile EV ("the app") is built and operated by Gate Engineering LLC. This policy describes what data the app handles, where it goes, and how you can delete it. It is written to be read, not skimmed — there is nothing hidden in it.</p>
 
 <h2>The short version</h2>
 <ul>
 <li>Your data is used to run <strong>your own</strong> trip and charging history. Nothing else.</li>
-<li><strong>No ads. No sale of data. No third-party analytics or tracking SDKs.</strong></li>
-<li>Your data lives in the app's own private cloud database, keyed to your account.</li>
+<li><strong>No ads. No sale of data. No analytics or tracking SDKs of our own.</strong> One Google component inside the app, the on-device reader that scans door-jamb labels (ML Kit), sends Google its own performance statistics; it is described below.</li>
+<li>Your data lives in the app's own private cloud database in the United States, keyed to your account.</li>
 <li>Subscriptions are paid through Google Play; the app never sees your card or payment details.</li>
-<li>Deleting your account, in the app or on the web dashboard, deletes your cloud data.</li>
+<li>Deleting your account, in the app or on the web dashboard, deletes your cloud data, apart from the few records listed under <em>Retention and deletion</em>.</li>
 <li>The web dashboard, your watch and your car's screen show the same data; none of them adds tracking.</li>
 </ul>
 
 <h2>What the app collects</h2>
 <table>
 <tr><th>Data</th><th>Why</th></tr>
-<tr><td><strong>Email address</strong> and, with Google sign-in, your Google profile name</td><td>Account sign-in (authentication only), and showing you which account you are signed in to.</td></tr>
-<tr><td><strong>Vehicle VIN and vehicle specs</strong> (make, model, year, battery details; optional door-jamb label photos you choose to capture)</td><td>Identifies your vehicle so your trips, charges, and efficiency stats are computed for the right car.</td></tr>
+<tr><td><strong>Email address</strong> and, with Google sign-in, your Google profile name</td><td>Account sign-in, showing you which account you are signed in to, account support (such as verifying a deletion request or applying a plan we grant), and essential service notices (such as advance notice of a price change or of the service closing). Never used for marketing.</td></tr>
+<tr><td><strong>Google sign-in details</strong> (your Google account ID and the profile-photo link Google sends with the sign-in)</td><td>Google sends them when you sign in with Google; our sign-in provider (Supabase) keeps them with your sign-in record. The app does not use the photo.</td></tr>
+<tr><td><strong>Sign-in records</strong> (for each phone or browser you are signed in on: the IP address and device or browser type it signed in from, and when it was created and last refreshed)</td><td>Kept by our sign-in provider (Supabase) to keep you signed in and to protect your account. They are kept until you delete your account; signing out of the web dashboard removes that browser's record sooner.</td></tr>
+<tr><td><strong>Vehicle VIN and vehicle specs</strong> (make, model, year, battery details; if you scan the door-jamb labels, the details read from them, including the label text as it was read — the label photos themselves stay on your phone)</td><td>Identifies your vehicle so your trips, charges, and efficiency stats are computed for the right car.</td></tr>
 <tr><td><strong>Trip GPS routes</strong> (location breadcrumbs while driving, odometer, speed, energy use)</td><td>Automatic trip logging and per-trip maps — the core feature of the app.</td></tr>
 <tr><td><strong>Charge sessions</strong> (charger location, energy delivered, price you enter, timestamps)</td><td>Your charging history, cost tracking, and charging-curve analytics.</td></tr>
+<tr><td><strong>Your notes</strong> (text you type on trips and charges)</td><td>Shown with that trip or charge, in the app and on the web dashboard.</td></tr>
+<tr><td><strong>Settings backed up to your account</strong> (your home charger's location, brand, model and electricity rate; the paired OBD adapter's Bluetooth name and address; saved trailers and tow capacity; fuel-comparison values; display preferences)</td><td>Restoring your setup after a reinstall or on a new phone, recognizing charging at home, and reconnecting to your adapter.</td></tr>
+<tr><td><strong>Saved places</strong> (the name, address and coordinates of map places you save)</td><td>Showing your saved places on the map and in trip planning, on every phone you sign in on.</td></tr>
+<tr><td><strong>Business mileage reports</strong> (the PDF you create: the name you enter, the vehicle and its VIN, and each business trip's date, distance and start and end towns; plus a record of its ID, period, business distance, business-use percentage, issue date and checksum)</td><td>A copy is saved to your account when you create the report, so the QR code on it can be checked and you can download it again from the web dashboard. Checking the QR code shows only the report's ID, period, business distance and percentage, issue date and checksum — never your name, VIN or trips.</td></tr>
 <tr><td><strong>Crash reports</strong> (stack trace, app version, device model, a random install identifier)</td><td>Fixing bugs. The identifier is random — it is not your email, account, or advertising ID. Deleted after 90 days.</td></tr>
 <tr><td><strong>App opens</strong> (one record per day on which your Board figures are loaded while you are signed in, in the app's Board or on the web dashboard: the date, how many times they were loaded that day, and the time of the last one)</td><td>Showing that the app is in use, and counting active testers. Kept with your account and deleted after 13 months.</td></tr>
 <tr><td><strong>Subscription records</strong> (Google Play purchase token, order ID, product and plan, status, expiry, and Google Play's own record of the subscription, which includes the country of purchase, the start date and any cancellation reason you give Google)</td><td>Unlocking the Pro or Max plan you bought. See <em>Subscriptions and purchases</em> below.</td></tr>
 </table>
 
 <h2>Where it lives</h2>
-<p>Your data is stored in the app's own database project (hosted on Supabase), in a private account scoped to your sign-in. It is not shared with, rented to, or sold to anyone. Access is restricted by row-level security to your own account.</p>
-<p>Some data also lives <strong>only on your device</strong>: app settings, diagnostic logs (off by default, opt-in, and only ever leave the phone if you personally share the file), and cached map data.</p>
+<p>Your data is stored in the app's own database project, hosted by Supabase on Amazon Web Services servers in the United States (Ohio), in a private account scoped to your sign-in. Access is restricted by row-level security to your own account. It is never sold or rented. Other people see only what you choose to share: a mileage report you hand to someone, and, if you leave community prices on, public stations' prices combined with other drivers' reports. Parts of it are sent only to the services listed under <em>Third-party services the app talks to</em>, and only for the feature that needs them.</p>
+<p><strong>If you live outside the United States</strong>, including in Canada or Québec, your information is stored and processed outside your province and country: in the United States, and, for route coordinates, in Germany (see <em>Routing</em> below). While it is there, the laws of those countries apply to it, including their rules on access by courts and authorities.</p>
+<p>Your app settings are backed up to your account so they survive a reinstall or a new phone: your home charger's location, brand, model and electricity rate, the paired OBD adapter's Bluetooth name and address, saved trailers and tow capacity, fuel-comparison values and display preferences. They are deleted with your account.</p>
+<p>Some data lives <strong>only on your device</strong>: cached map data, small app event logs that are always kept (they note events such as the app's background service starting and stopping, connections to your vehicle, map events and crashes, with a daily log file that also holds each crash's technical details), and detailed diagnostic logs (off by default, opt-in). These log files leave the phone only if you personally share them; crash reports, listed above, are sent separately.</p>
 
 <h2>Background location</h2>
-<p>The app asks for background ("Allow all the time") location because <strong>automatic trip logging is the core feature</strong>: it detects when you start driving and records the route without you opening the app. Location is recorded for your own trip history. It is not used for advertising, profiling, or location sharing of any kind. You can decline background location; trip logging then only works while the app is open.</p>
+<p>The app asks for background ("Allow all the time") location because <strong>automatic trip logging is the core feature</strong>: it detects when you start driving and records the route without you opening the app. Location is recorded for your own trip history. It is never sold, never used for advertising or profiling, and never shown to other people as yours (community charger prices, if you leave them on, show a public station's location only combined with other drivers' reports). Location is sent only to the services listed below (routing, place names, area lookup for gas prices, weather and elevation, charger directories), and only to run the feature that needs it. You can decline background location; trip logging then only works while the app is open.</p>
 
 <h2>Third-party services the app talks to</h2>
-<p>The app queries a small number of services to do its job. Each receives only what the feature needs, never your identity:</p>
+<p>The app queries a small number of services to do its job. Each receives only what the feature needs, and we never send them your name, email or account. Services your phone contacts directly can see its IP address, as with any web request, and the services Google provides through your phone (place search, place names and the label reader) handle requests under Google's own privacy policy:</p>
 <ul>
 <li><strong>Charger directories</strong> (NREL / Open Charge Map): the map region you are viewing, to list nearby chargers.</li>
 <li><strong>Charger photos</strong> (Open Charge Map): when you open a charging station's details on your car's screen (Android Auto), its photos load from Open Charge Map by station ID. As with any web request, Open Charge Map's server sees your device's IP address.</li>
 <li><strong>Routing</strong> (TrueMile's routing service, run for us by Simple Routing on servers in Germany): the coordinates a route connects (its start, end and any stops, or points along a recorded trip) — never your account or identity — to draw and time your planned route and to align recorded trips to roads. Route requests pass through our own server first, so Simple Routing receives only the coordinates, not your device's IP address. Route coordinates are therefore sent to, and processed on, Simple Routing's servers in Germany. Simple Routing keeps copies of route requests for 24 hours and its backups for 30 days, then deletes them. Our own server counts how many routes each account asks for per hour, so that no single account can use up the routing service for everyone; those counts contain no coordinates or places.</li>
 <li><strong>Map tiles</strong> (OpenFreeMap): the map area you are viewing, to draw the map itself.</li>
-<li><strong>Address search</strong> (your phone's built-in place search, which on most Android phones is provided by Google): the destination text you type, to suggest places.</li>
+<li><strong>Address search</strong> (your phone's built-in place search, which on most Android phones is provided by Google): the text you type, and an area around your current position so nearby places are suggested first.</li>
+<li><strong>Place names</strong> (your phone's built-in geocoder, which on most Android phones is provided by Google): coordinates, to turn them into street, town or state names — your current position about once a day (to find your state for fuel prices, while automatic fuel prices are on), the locations of your saved charges including home (to label them on the charge map), the first and last points of each business trip (for the mileage report), and points you tap on the trip-planning map (or your current position, when you use that map's my-location button to fill in the departure).</li>
 <li><strong>Charger naming</strong> (the NREL and Open Charge Map charger directories): the coordinates of a charger you arrive at, to suggest the station's network for the session.</li>
 <li><strong>Elevation &amp; weather</strong> (Open-Elevation / the US National Weather Service): route coordinates, to enrich trip details with grade and wind.</li>
 <li><strong>VIN decoding</strong> (NHTSA, a US government service): the VIN you enter or scan, to fill in your vehicle's specifications.</li>
 <li><strong>Window sticker</strong> (Ford): your VIN, only when you tap <em>View Window Sticker</em>, which opens Ford's window-sticker page in your browser.</li>
 <li><strong>Fuel prices</strong> (EIA, a US government service): your state, to compare your charging cost against local gas prices.</li>
 <li><strong>Area lookup</strong> (FCC, a US government service): the coordinates of saved charge sessions — including home charges — may be geocoded once to determine the US state they occurred in, for the gas-price comparison above.</li>
-<li><strong>Community charger prices</strong> (optional, on by default, can be turned off in Settings): when you log a paid public charge, the station's location, price, and speed can be contributed to a shared community dataset under a <strong>random anonymous identifier</strong> — never your email, account, or VIN. Home charging is <strong>never</strong> contributed.</li>
+<li><strong>Door-jamb label scanning</strong> (Google ML Kit, which runs on your phone): the photo is read on your phone and is never sent to Google; the details read from it are saved with your vehicle (see <em>What the app collects</em>). Like other Google on-device components, ML Kit sends Google basic performance and usage statistics — the device model and Android version, the app's name and version, a random per-installation identifier, timings and error codes — which Google uses for diagnostics and to measure how ML Kit is used, and says it does not share with others.</li>
+<li><strong>Community charger prices</strong> (optional, on by default, can be turned off in Settings): when you log a charge at a public station (including free ones), the station's location and network, its price, the peak charging speed, the hour of day, and the stall count, connector type and amenities you noted can be contributed to a shared community dataset under a <strong>coded identifier</strong> — a one-way code computed from your account ID with a secret key that stays on our server. It is never your email, account ID or VIN, and it is never shown to other users. Comments you type on a charge are not contributed. Charges at your saved home location, or labelled as home, are <strong>never</strong> contributed; save your home charger's location in the app (Garage → Charger) to be sure.</li>
 </ul>
-<p>None of these are analytics or advertising services.</p>
+<p>Apart from the ML Kit statistics described above, none of these are analytics or advertising services.</p>
+
+<h2>Emails</h2>
+<ul>
+<li><strong>Account emails</strong> (sent through our email delivery provider, Resend, in the United States): when you create an account with email and password, or reset your password, Resend receives your email address and the one-time code, only to deliver that message.</li>
+<li><strong>Monitoring emails to us</strong> (also through Resend): short emails to us, the operator, about subscription events — the plan and its price, how many days old the account is, what happened and when — and daily totals. If the database grows unusually large, an alert also names the few accounts storing the most data, by their random account ID and size. They never include your name, email address, VIN, location or purchase identifiers.</li>
+<li>We email you only about your account and the service: replies to your messages, and essential notices such as a price change or the service closing. Never marketing.</li>
+</ul>
 
 <h2>The web dashboard</h2>
 <p>At <a href="https://gateeng.com/truemileev/app.html">gateeng.com/truemileev/app.html</a> you can see your own account in a browser: the same drives, charges, reports and exports as the app.</p>
 <ul>
-<li><strong>Sign-in</strong> is with Google or with your email and password, handled by our database provider (Supabase); Google sign-in goes through Google. The session is kept in the browser tab's session storage and is gone when you close the tab.</li>
+<li><strong>Sign-in</strong> is with Google or with your email and password, handled by our database provider (Supabase), with account emails delivered as described under <em>Emails</em>; Google sign-in goes through Google. The session is kept in this browser tab's session storage. On a shared computer, use <strong>Sign out</strong>: closing the tab alone may not end the session, because browsers can reopen a closed tab. The dashboard also signs itself out, and ends the session on our side, when it is opened again after 4 hours without use.</li>
 <li><strong>It only reads your data</strong>, with one exception: Account → Delete account deletes your account exactly as the app does (see <em>Retention and deletion</em>).</li>
 <li><strong>Stays in your browser</strong>: display preferences (theme, units, the chosen vehicle), the report design and any logo you add to it, and any memberships you list on the Financial page are kept in your browser's local storage on that computer. They are never sent to us. CSV and PDF downloads are made in your browser.</li>
 <li><strong>The only outside service</strong> is OpenFreeMap, which receives the map area you are viewing to draw the map. No cookies for tracking, no analytics, no advertising.</li>
@@ -118,10 +151,13 @@ th{background:rgba(14,111,168,.08)}
 
 <h2>Your watch and your car's screen</h2>
 <ul>
-<li><strong>Wear OS watch.</strong> The phone app sends your watch your state of charge, range, your driving and charging totals, the drive in progress with the car's current location, and where the car was parked, through Google Play services' Wear OS Data Layer, directly between your own devices. The watch app sends nothing to us.</li>
+<li><strong>Wear OS watch.</strong> The phone app sends your watch your state of charge, range, your driving and charging totals, the drive in progress with the car's current location, and where the car was parked, through Google Play services' Wear OS Data Layer, which passes it between your own phone and watch — over Bluetooth, or through Google's servers under your Google account when the two are not directly connected. None of it goes to us, and the watch app sends nothing to us.</li>
 <li><strong>Android Auto.</strong> When your phone is connected to Android Auto, the app shows charging locations and your bookmarks on the car's screen (test versions of the app also show live drive and charging information there) through Google's Android Auto app on your phone. Charger photos load from Open Charge Map as described above.</li>
 <li>Nothing from the watch or the car's screen is stored on our side beyond what the phone app already keeps in your account.</li>
 </ul>
+
+<h2>Beta volunteers</h2>
+<p>If you volunteer to help us add support for your car, we switch on a <strong>Test session</strong> in the app for your account, or send you a test version of the app that has one (accounts that tested the app before its launch have it too). You may choose to send us the file a Test session makes. It holds your car's readings and trouble codes as the app read them, the VIN, the session's drive log with its GPS track, the app's own log for that day, and any notes you typed. The file is made on your phone and leaves it only if you choose to send it, by email, to support@gateeng.com. We use it only to add support for your car, and delete it within 90 days after your car becomes supported or the beta ends.</p>
 
 <h2>Subscriptions and purchases</h2>
 <p>TrueMile EV offers Pro and Max subscriptions, sold through Google Play.</p>
@@ -138,37 +174,48 @@ th{background:rgba(14,111,168,.08)}
 <ul>
 <li>No advertising, ad SDKs, or ad identifiers.</li>
 <li>No sale or sharing of personal data with data brokers.</li>
-<li>No third-party analytics (no Google Analytics, Firebase Analytics, Mixpanel, etc.).</li>
+<li>No analytics services (no Google Analytics, Firebase Analytics, Mixpanel, etc.). The only usage statistics that leave the app are the ML Kit performance statistics that Google's on-device label reader sends to Google, described above.</li>
 <li>No reading of contacts, messages, photos (other than vehicle photos you take in-app), or any data unrelated to driving and charging.</li>
 </ul>
 
 <h2>Retention and deletion</h2>
 <ul>
 <li>Your cloud data is kept for as long as you keep your account, except where a shorter period is stated below.</li>
-<li><strong>Settings → Delete account</strong> in the app, or <strong>Account → Delete account</strong> on the web dashboard, permanently removes your personal cloud data — your identity, email, trips, routes, GPS locations, home coordinates, charging locations, prices and costs, notes, settings, and generated reports.</li>
+<li><strong>Settings → Delete account</strong> in the app, or <strong>Account → Delete account</strong> on the web dashboard, permanently removes your personal cloud data — your identity, email, sign-in records, trips, routes, GPS locations, home coordinates, charging locations, saved places, prices and costs, notes, settings, and generated reports — except the records described below.</li>
 <li>Deleting your account does not cancel a Google Play subscription; cancel it in Google Play.</li>
 <li>Uninstalling the app removes all local data from the device.</li>
 <li>Crash reports carry only a random install identifier, never your account, and are deleted after 90 days.</li>
 <li>Route requests (coordinates only, never your account) are kept by our routing provider, Simple Routing, for 24 hours; its backups roll off after 30 days.</li>
-<li>Our database host's request logs can include a route's coordinates (they are part of the request's web address) and the account that asked for it; those logs are kept for up to 7 days.</li>
+<li>Our database host's request logs record each request's IP address and web address — which can include a route's coordinates, your vehicle's VIN or a record's ID — and the account that made the request; those logs are kept for up to 7 days.</li>
 <li>The per-account hourly route counts are deleted after 3 days, whether or not you delete your account.</li>
-<li>Anonymous community price contributions are never linked to your account and expire automatically within 14 days.</li>
+<li>Sign-in records (IP address and device or browser type) are kept until you delete your account; signing out of the web dashboard removes that browser's record.</li>
+<li>Community price contributions carry only the coded identifier described above, never your email, account ID or VIN, and expire automatically within 14 days.</li>
 <li>The daily app-open records described above are deleted after 13 months, or with your account if you delete it sooner.</li>
 <li>Sign-ups whose email address is never confirmed are deleted after 30 days.</li>
 <li><strong>Backups.</strong> Our database host keeps backups for up to 7 days, so data you delete can remain in a backup until that backup rolls off.</li>
 <li>When you delete your account, we keep its random account ID and the time of deletion for 35 days, and nothing else, so that if we ever had to restore a backup we could delete the account again.</li>
 </ul>
 
-<p><strong>The vehicle's health record stays with the vehicle.</strong> When you delete your account, an anonymized battery and condition history is retained, keyed only to the vehicle's VIN — like a service book that follows the car to its next owner. It contains vehicle facts only:</p>
+<p><strong>The vehicle's health record stays with the vehicle.</strong> When you delete your account, a battery and condition history is kept, keyed to the vehicle's VIN — like a service book that follows the car to its next owner. It holds no name, email or account, but it is <strong>not anonymous</strong>: a VIN identifies one specific vehicle, and registration, insurance or vehicle-history records can link a VIN to its registered owner. It contains vehicle facts only:</p>
 <ul>
-<li>The vehicle's identity card: make, model, year, battery pack size, and the door-jamb sticker specifications (manufacture date, weight ratings, tire and rim sizes, cold tire pressures).</li>
+<li>The vehicle's identity card: make, model, year, battery pack size, and the details the app read from the door-jamb sticker (manufacture date, weight ratings, tire and rim sizes, cold tire pressures, and the other codes and text printed on the label).</li>
 <li>Charging sessions at day-level dates: odometer, battery percentage before/after, energy added, duration, fast-vs-slow charging, outside temperature, and the charging-power curve.</li>
 <li>Battery state-of-health readings by date.</li>
 <li>Diagnostic trouble codes read from the vehicle, and tire fitment records.</li>
 </ul>
-<p>It can never contain your name, email, or any account link; any location; any price, cost, or payment information; any trip or route; or any free-text notes — the retained record has no fields for them. If you also want this vehicle history removed, email us with the VIN before deleting your account and we will exclude it.</p>
+<p>Nothing is copied into it from your name, email or account; from any location; from any price, cost or payment information; from any trip or route; or from the notes you write. It has no set end date. You can have it deleted: email us the VIN at <a href="mailto:support@gateeng.com">support@gateeng.com</a> and we will delete that record once your account deletion has run. The record is only created when the account is deleted, so a request you send before deleting your account is carried out after the deletion has run.</p>
 
-<p class="note"><strong>One code is kept so the introductory period can't be restarted.</strong> New accounts get an introductory period (a 14-day Max trial) during which every feature is open. To keep that to one per vehicle, we store a one-way code derived from the vehicle's VIN and from the OBD adapter's address, together with a one-way code for the account that used it. The codes are irreversible: they contain no VIN, no adapter address and no account identifier, and nothing can be read back out of them — they are only ever compared for equality, so the single question they answer is "has this vehicle already had its introductory period, and was it this same account?" They are kept for up to 90 days after they are created, including past account deletion — that is the point of them — and are then deleted. They are never used for advertising, profiling or any other purpose.</p>
+<p class="note"><strong>One code is kept so the introductory period can't be restarted.</strong> New accounts get an introductory period (a 14-day Max trial) during which every feature is open. To keep that to one per vehicle, we store a one-way code derived from the vehicle's VIN and from the OBD adapter's address, together with a one-way code for the account that used it. The codes are computed with a secret key that stays on our server. They do not contain the VIN, the adapter address or the account ID, and without that key they cannot be turned back into them. They are only ever compared for equality, so the single question they answer is "has this vehicle already had its introductory period, and was it this same account?" They are kept for up to 90 days after they are created, including past account deletion — that is the point of them — and are then deleted. They are never used for advertising, profiling or any other purpose.</p>
+
+<h2>Your rights and choices</h2>
+<ul>
+<li><strong>Access.</strong> You can see your data in the app and on the web dashboard, and download it: My account › My data in the app, and the downloads on the web dashboard. You can also ask us for a copy of what we hold about you.</li>
+<li><strong>Correction.</strong> Most records can be corrected in the app (for example a charge's energy or price); for anything else, email us and we will correct it.</li>
+<li><strong>Deletion.</strong> Delete single trips in the app, your whole account in the app or on the web dashboard, or anything else by email (see <em>Retention and deletion</em>).</li>
+<li><strong>Withdrawing consent.</strong> Turn community price sharing off in Settings → My Account, turn background location off in Android's settings, or delete your account.</li>
+<li><strong>How to ask.</strong> Email <a href="mailto:support@gateeng.com">support@gateeng.com</a> from the email address your account uses. We answer within 30 days.</li>
+<li><strong>Complaints.</strong> If you are not satisfied with our answer, you can complain to the privacy authority where you live — in Canada, the Office of the Privacy Commissioner of Canada; in Québec, the Commission d'accès à l'information du Québec.</li>
+</ul>
 
 <h2>Children</h2>
 <p>The app is a vehicle telemetry tool and is not directed at children under 13.</p>
@@ -179,6 +226,7 @@ th{background:rgba(14,111,168,.08)}
 <h2>Contact</h2>
 <p>Questions or deletion requests: <strong><a href="mailto:support@gateeng.com">support@gateeng.com</a></strong><br>
 Gate Engineering LLC, 2501 Chatham Rd 8139, Springfield, IL 62704, USA</p>
+<p><strong>Person responsible for personal information:</strong> the owner of Gate Engineering LLC, who acts as its Privacy Officer, reachable at <a href="mailto:support@gateeng.com">support@gateeng.com</a> or at the address above.</p>
 
 </main>
 <footer class="wrap">

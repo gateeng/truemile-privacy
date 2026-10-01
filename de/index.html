@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TrueMile EV — Datenschutzerklärung</title>
+<meta name="description" content="Wie TrueMile EV mit Ihren Daten umgeht: was erfasst wird, wo die Daten gespeichert sind und wie Sie sie löschen können.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="https://gateeng.com/truemileev/assets/icon.png">
+<link rel="alternate" hreflang="en" href="https://gateeng.com/truemile-privacy/">
+<link rel="alternate" hreflang="fr" href="https://gateeng.com/truemile-privacy/fr/">
+<link rel="alternate" hreflang="es" href="https://gateeng.com/truemile-privacy/es/">
+<link rel="alternate" hreflang="de" href="https://gateeng.com/truemile-privacy/de/">
+<link rel="alternate" hreflang="it" href="https://gateeng.com/truemile-privacy/it/">
+<link rel="alternate" hreflang="x-default" href="https://gateeng.com/truemile-privacy/">
+<style>
+:root{--bg:#070c16;--card:#101a2c;--ink:#e8eef7;--muted:#8fa1b8;--line:#1d2b42;--cyan:#37b6ff;--green:#00e676;color-scheme:dark light}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;
+font-family:-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;background:var(--bg);color:var(--ink);
+background-image:
+ radial-gradient(900px 500px at 70% -10%,rgba(30,110,190,.22),transparent 60%),
+ radial-gradient(700px 420px at 10% 30%,rgba(0,180,120,.07),transparent 60%),
+ url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"><g stroke="%23223a5c" stroke-width="1" fill="none" opacity=".28"><path d="M0 24 H28 V52 H72 M36 0 V16 H60"/><circle cx="28" cy="24" r="2" fill="%23223a5c" stroke="none"/><circle cx="60" cy="16" r="2" fill="%23223a5c" stroke="none"/></g></svg>');}
+.wrap{width:100%;max-width:820px;margin-left:auto;margin-right:auto;padding:0 22px}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 0;font-size:.92em}
+.bar a{color:var(--muted)}.bar a:hover{color:var(--cyan)}
+.langs{display:flex;flex-wrap:wrap;gap:0 16px;padding-top:8px;font-size:.88em}
+.langs a{color:var(--muted);padding:3px 0}.langs a:hover{color:var(--cyan)}
+.langs a[aria-current="page"]{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--cyan);text-underline-offset:4px}
+h1{font-size:clamp(1.5em,4vw,2em);margin:28px 0 6px;letter-spacing:.3px;font-weight:800}
+h1 span{background:linear-gradient(92deg,var(--cyan),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+.eff{color:var(--muted);margin:0 0 6px;font-size:.95em}
+.rule{height:2px;border-radius:2px;background:linear-gradient(90deg,var(--cyan),var(--green));margin:14px 0 26px}
+h2{font-size:1.12em;margin:2em 0 .5em;color:var(--cyan);letter-spacing:.3px}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.25em}li{margin-bottom:.4em}
+strong{color:#fff}
+table{border-collapse:collapse;width:100%;font-size:.94em;margin:0 0 1.2em;background:rgba(16,26,44,.5);border-radius:10px;overflow:hidden}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:rgba(55,182,255,.08);color:var(--ink);font-weight:600}
+td{color:var(--muted)}td strong{color:var(--ink)}
+.box{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 1.2em;background:linear-gradient(180deg,rgba(30,110,190,.10),rgba(16,26,44,.4))}
+.box ol{margin:0;padding-left:1.2em}
+.note{border-left:3px solid var(--green);padding:2px 0 2px 14px;margin:0 0 1.2em;color:var(--ink)}
+footer{margin-top:auto;padding:46px 0 36px;color:var(--muted);font-size:.85em;text-align:center}
+footer a{color:var(--muted);margin:0 8px}footer a:hover{color:var(--cyan)}
+
+@media (prefers-color-scheme: light){
+:root{--bg:#f5f1e8;--card:#fffdf7;--ink:#1b2330;--muted:#5a6675;--line:#dcd8c9;--cyan:#0e6fa8;--green:#107874;color-scheme:light}
+body{background-image:
+ radial-gradient(900px 500px at 70% -10%,rgba(14,111,168,.10),transparent 60%),
+ radial-gradient(700px 420px at 10% 30%,rgba(16,120,116,.07),transparent 60%),
+ url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"><g stroke="%23c9c4b0" stroke-width="1" fill="none" opacity=".75"><path d="M0 24 H28 V52 H72 M36 0 V16 H60"/><circle cx="28" cy="24" r="2" fill="%23c9c4b0" stroke="none"/><circle cx="60" cy="16" r="2" fill="%23c9c4b0" stroke="none"/></g></svg>')}
+strong{color:#0f1722}
+table{background:rgba(255,253,247,.85)}
+th{background:rgba(14,111,168,.08)}
+.box{background:linear-gradient(180deg,rgba(14,111,168,.07),rgba(255,253,247,.9))}
+}
+@media(max-width:560px){.bar{flex-direction:column;align-items:flex-start;gap:6px}}
+</style></head><body>
+<header class="bar wrap">
+  <a href="https://gateeng.com/truemileev/">&larr; TrueMile EV</a>
+  <a href="https://gateeng.com">Gate Engineering LLC</a>
+</header>
+<nav class="langs wrap" aria-label="Sprache" translate="no">
+  <a href="https://gateeng.com/truemile-privacy/" hreflang="en" lang="en">English</a>
+  <a href="https://gateeng.com/truemile-privacy/fr/" hreflang="fr" lang="fr">Français</a>
+  <a href="https://gateeng.com/truemile-privacy/es/" hreflang="es" lang="es">Español</a>
+  <a href="https://gateeng.com/truemile-privacy/de/" hreflang="de" lang="de" aria-current="page">Deutsch</a>
+  <a href="https://gateeng.com/truemile-privacy/it/" hreflang="it" lang="it">Italiano</a>
+</nav>
+<main class="wrap">
+<h1>TrueMile <span>EV</span> — Datenschutzerklärung</h1>
+<p class="eff">Gültig ab: 1. Oktober 2026</p>
+<div class="rule"></div>
+<p class="note tnote" role="note">Diese Seite ist eine Übersetzung der englischen Originalfassung: <a href="https://gateeng.com/truemile-privacy/" hreflang="en" lang="en">English</a>. Bei Abweichungen zwischen den Fassungen ist die englische Fassung maßgeblich, es sei denn, das Gesetz schreibt vor, dass die deutsche Fassung maßgeblich ist.</p>
+
+<p>TrueMile EV („die App“) wird von Gate Engineering LLC entwickelt und betrieben. Diese Erklärung beschreibt, welche Daten die App verarbeitet, wohin sie gelangen und wie Sie sie löschen können. Sie ist zum Lesen geschrieben, nicht zum Überfliegen – nichts darin ist versteckt.</p>
+
+<h2>Kurzfassung</h2>
+<ul>
+<li>Ihre Daten werden verwendet, um <strong>Ihre eigene</strong> Fahrt- und Ladehistorie zu führen. Für nichts anderes.</li>
+<li><strong>Keine Werbung. Kein Verkauf von Daten. Keine eigenen Analyse- oder Tracking-SDKs.</strong> Eine Google-Komponente in der App, die auf dem Gerät laufende Lesefunktion, die die Etiketten am Türrahmen scannt (ML Kit), sendet Google ihre eigenen Leistungsstatistiken; sie wird unten beschrieben.</li>
+<li>Ihre Daten liegen in der eigenen privaten Cloud-Datenbank der App in den Vereinigten Staaten und sind Ihrem Konto zugeordnet.</li>
+<li>Abonnements werden über Google Play bezahlt; die App sieht Ihre Karten- oder Zahlungsdaten nie.</li>
+<li>Wenn Sie Ihr Konto löschen, in der App oder im Web-Dashboard, werden Ihre Cloud-Daten gelöscht, abgesehen von den wenigen Datensätzen, die unter <em>Aufbewahrung und Löschung</em> aufgeführt sind.</li>
+<li>Das Web-Dashboard, Ihre Uhr und der Bildschirm Ihres Autos zeigen dieselben Daten; keines davon fügt Tracking hinzu.</li>
+</ul>
+
+<h2>Welche Daten die App erfasst</h2>
+<table>
+<tr><th>Daten</th><th>Zweck</th></tr>
+<tr><td><strong>E-Mail-Adresse</strong> und, bei Anmeldung mit Google, Ihr Google-Profilname</td><td>Kontoanmeldung, Anzeige, bei welchem Konto Sie angemeldet sind, Kontosupport (etwa die Überprüfung eines Löschantrags oder die Anwendung eines von uns gewährten Plans) und wesentliche Servicemitteilungen (etwa die Vorankündigung einer Preisänderung oder der Einstellung des Dienstes). Wird niemals für Marketing verwendet.</td></tr>
+<tr><td><strong>Google-Anmeldedaten</strong> (Ihre Google-Konto-ID und der Link zum Profilfoto, den Google mit der Anmeldung sendet)</td><td>Google sendet sie, wenn Sie sich mit Google anmelden; unser Anmeldeanbieter (Supabase) speichert sie zusammen mit Ihrem Anmeldedatensatz. Die App verwendet das Foto nicht.</td></tr>
+<tr><td><strong>Anmeldedatensätze</strong> (für jedes Smartphone oder jeden Browser, auf dem Sie angemeldet sind: die IP-Adresse und der Geräte- oder Browsertyp, von dem aus die Anmeldung erfolgte, sowie wann sie erstellt und zuletzt aktualisiert wurde)</td><td>Werden von unserem Anmeldeanbieter (Supabase) gespeichert, um Sie angemeldet zu halten und Ihr Konto zu schützen. Sie werden aufbewahrt, bis Sie Ihr Konto löschen; wenn Sie sich vom Web-Dashboard abmelden, wird der Datensatz dieses Browsers früher entfernt.</td></tr>
+<tr><td><strong>Fahrzeug-Identifizierungsnummer (VIN) und Fahrzeugdaten</strong> (Marke, Modell, Baujahr, Batteriedaten; wenn Sie die Etiketten am Türrahmen scannen, die daraus gelesenen Angaben, einschließlich des Etikettentexts in der gelesenen Form – die Fotos der Etiketten selbst bleiben auf Ihrem Smartphone)</td><td>Identifiziert Ihr Fahrzeug, damit Ihre Fahrten, Ladevorgänge und Effizienzstatistiken für das richtige Auto berechnet werden.</td></tr>
+<tr><td><strong>GPS-Routen der Fahrten</strong> (Standortspur während der Fahrt, Kilometerstand, Geschwindigkeit, Energieverbrauch)</td><td>Automatische Fahrtenaufzeichnung und Karten für jede Fahrt – die Kernfunktion der App.</td></tr>
+<tr><td><strong>Ladevorgänge</strong> (Standort der Ladestation, abgegebene Energie, von Ihnen eingegebener Preis, Zeitstempel)</td><td>Ihre Ladehistorie, Kostenverfolgung und Analysen der Ladekurve.</td></tr>
+<tr><td><strong>Ihre Notizen</strong> (Text, den Sie zu Fahrten und Ladevorgängen eingeben)</td><td>Werden bei der jeweiligen Fahrt oder dem jeweiligen Ladevorgang angezeigt, in der App und im Web-Dashboard.</td></tr>
+<tr><td><strong>In Ihrem Konto gesicherte Einstellungen</strong> (Standort, Marke, Modell und Stromtarif Ihrer Heimladestation; Bluetooth-Name und -Adresse des gekoppelten OBD-Adapters; gespeicherte Anhänger und Anhängelast; Werte für den Kraftstoffvergleich; Anzeigeeinstellungen)</td><td>Wiederherstellung Ihrer Einrichtung nach einer Neuinstallation oder auf einem neuen Smartphone, Erkennen von Ladevorgängen zu Hause und erneutes Verbinden mit Ihrem Adapter.</td></tr>
+<tr><td><strong>Gespeicherte Orte</strong> (Name, Adresse und Koordinaten von Orten auf der Karte, die Sie speichern)</td><td>Anzeige Ihrer gespeicherten Orte auf der Karte und in der Fahrtplanung, auf jedem Smartphone, auf dem Sie sich anmelden.</td></tr>
+<tr><td><strong>Berichte zur geschäftlichen Fahrleistung</strong> (das von Ihnen erstellte PDF: der von Ihnen eingegebene Name, das Fahrzeug und seine VIN sowie Datum, Strecke und Start- und Zielort jeder geschäftlichen Fahrt; dazu ein Datensatz mit seiner ID, dem Zeitraum, der geschäftlichen Strecke, dem Prozentsatz der geschäftlichen Nutzung, dem Ausstellungsdatum und der Prüfsumme)</td><td>Beim Erstellen des Berichts wird eine Kopie in Ihrem Konto gespeichert, damit der QR-Code darauf geprüft werden kann und Sie den Bericht im Web-Dashboard erneut herunterladen können. Die Prüfung des QR-Codes zeigt nur die ID des Berichts, den Zeitraum, die geschäftliche Strecke und den Prozentsatz, das Ausstellungsdatum und die Prüfsumme – niemals Ihren Namen, Ihre VIN oder Ihre Fahrten.</td></tr>
+<tr><td><strong>Absturzberichte</strong> (Stacktrace, App-Version, Gerätemodell, eine zufällige Installationskennung)</td><td>Fehlerbehebung. Die Kennung ist zufällig – sie ist weder Ihre E-Mail-Adresse noch Ihr Konto noch Ihre Werbe-ID. Werden nach 90 Tagen gelöscht.</td></tr>
+<tr><td><strong>App-Öffnungen</strong> (ein Datensatz für jeden Tag, an dem Ihre Board-Werte geladen werden, während Sie angemeldet sind, im Board der App oder im Web-Dashboard: das Datum, wie oft sie an diesem Tag geladen wurden, und die Uhrzeit des letzten Ladens)</td><td>Nachweis, dass die App genutzt wird, und Zählung aktiver Tester. Werden mit Ihrem Konto gespeichert und nach 13 Monaten gelöscht.</td></tr>
+<tr><td><strong>Abonnementdatensätze</strong> (Google-Play-Kauftoken, Bestell-ID, Produkt und Plan, Status, Ablauf sowie der eigene Datensatz von Google Play zum Abonnement, der das Land des Kaufs, das Startdatum und einen etwaigen Kündigungsgrund enthält, den Sie Google nennen)</td><td>Freischaltung des von Ihnen gekauften Pro- oder Max-Plans. Siehe <em>Abonnements und Käufe</em> unten.</td></tr>
+</table>
+
+<h2>Wo Ihre Daten gespeichert sind</h2>
+<p>Ihre Daten werden im eigenen Datenbankprojekt der App gespeichert, das von Supabase auf Servern von Amazon Web Services in den Vereinigten Staaten (Ohio) gehostet wird, in einem privaten, auf Ihre Anmeldung beschränkten Konto. Der Zugriff ist durch Sicherheit auf Zeilenebene (row-level security) auf Ihr eigenes Konto beschränkt. Die Daten werden niemals verkauft oder vermietet. Andere Personen sehen nur, was Sie zu teilen beschließen: einen Fahrleistungsbericht, den Sie jemandem übergeben, und, wenn Sie die Community-Preise eingeschaltet lassen, die Preise öffentlicher Ladestationen, zusammengeführt mit den Meldungen anderer Fahrer. Teile davon werden nur an die unter <em>Drittanbieterdienste, mit denen die App kommuniziert</em> aufgeführten Dienste gesendet, und nur für die Funktion, die sie benötigt.</p>
+<p><strong>Wenn Sie außerhalb der Vereinigten Staaten leben</strong>, auch in Kanada oder Québec, werden Ihre Informationen außerhalb Ihrer Provinz und Ihres Landes gespeichert und verarbeitet: in den Vereinigten Staaten und, bei Routenkoordinaten, in Deutschland (siehe <em>Routenberechnung</em> unten). Solange sie sich dort befinden, gelten für sie die Gesetze dieser Länder, einschließlich deren Vorschriften über den Zugriff durch Gerichte und Behörden.</p>
+<p>Ihre App-Einstellungen werden in Ihrem Konto gesichert, damit sie eine Neuinstallation oder ein neues Smartphone überstehen: Standort, Marke, Modell und Stromtarif Ihrer Heimladestation, Bluetooth-Name und -Adresse des gekoppelten OBD-Adapters, gespeicherte Anhänger und Anhängelast, Werte für den Kraftstoffvergleich und Anzeigeeinstellungen. Sie werden mit Ihrem Konto gelöscht.</p>
+<p>Manche Daten liegen <strong>nur auf Ihrem Gerät</strong>: zwischengespeicherte Kartendaten, kleine App-Ereignisprotokolle, die immer geführt werden (sie vermerken Ereignisse wie das Starten und Beenden des Hintergrunddienstes der App, Verbindungen zu Ihrem Fahrzeug, Kartenereignisse und Abstürze, mit einer täglichen Protokolldatei, die auch die technischen Details jedes Absturzes enthält), und ausführliche Diagnoseprotokolle (standardmäßig ausgeschaltet, nur auf Ihren Wunsch). Diese Protokolldateien verlassen das Smartphone nur, wenn Sie sie selbst teilen; die oben aufgeführten Absturzberichte werden separat gesendet.</p>
+
+<h2>Standort im Hintergrund</h2>
+<p>Die App bittet um den Standortzugriff im Hintergrund („Immer zulassen“, englisch „Allow all the time“), weil <strong>die automatische Fahrtenaufzeichnung die Kernfunktion ist</strong>: Sie erkennt, wann Sie losfahren, und zeichnet die Route auf, ohne dass Sie die App öffnen. Der Standort wird für Ihre eigene Fahrthistorie aufgezeichnet. Er wird niemals verkauft, niemals für Werbung oder Profilbildung verwendet und anderen Personen niemals als Ihr Standort angezeigt (Community-Ladepreise zeigen, wenn Sie sie eingeschaltet lassen, den Standort einer öffentlichen Ladestation nur zusammengeführt mit den Meldungen anderer Fahrer). Der Standort wird nur an die unten aufgeführten Dienste gesendet (Routenberechnung, Ortsnamen, Gebietsermittlung für Benzinpreise, Wetter und Höhendaten, Ladestationsverzeichnisse), und nur, um die Funktion auszuführen, die ihn benötigt. Sie können den Standortzugriff im Hintergrund ablehnen; die Fahrtenaufzeichnung funktioniert dann nur, während die App geöffnet ist.</p>
+
+<h2>Drittanbieterdienste, mit denen die App kommuniziert</h2>
+<p>Die App fragt eine kleine Anzahl von Diensten ab, um ihre Aufgabe zu erfüllen. Jeder erhält nur, was die Funktion benötigt, und wir senden ihnen niemals Ihren Namen, Ihre E-Mail-Adresse oder Ihr Konto. Dienste, die Ihr Smartphone direkt kontaktiert, können wie bei jeder Webanfrage dessen IP-Adresse sehen, und die Dienste, die Google über Ihr Smartphone bereitstellt (Ortssuche, Ortsnamen und die Etiketten-Lesefunktion), bearbeiten Anfragen nach der eigenen Datenschutzerklärung von Google:</p>
+<ul>
+<li><strong>Ladestationsverzeichnisse</strong> (NREL / Open Charge Map): der Kartenbereich, den Sie gerade ansehen, um Ladestationen in der Nähe aufzulisten.</li>
+<li><strong>Fotos von Ladestationen</strong> (Open Charge Map): Wenn Sie auf dem Bildschirm Ihres Autos (Android Auto) die Details einer Ladestation öffnen, werden deren Fotos anhand der Stations-ID von Open Charge Map geladen. Wie bei jeder Webanfrage sieht der Server von Open Charge Map die IP-Adresse Ihres Geräts.</li>
+<li><strong>Routenberechnung</strong> (der Routing-Dienst von TrueMile, für uns betrieben von Simple Routing auf Servern in Deutschland): die Koordinaten, die eine Route verbindet (Start, Ziel und etwaige Zwischenstopps oder Punkte entlang einer aufgezeichneten Fahrt) – niemals Ihr Konto oder Ihre Identität –, um Ihre geplante Route zu zeichnen und ihre Fahrzeit zu berechnen und um aufgezeichnete Fahrten an Straßen auszurichten. Routenanfragen laufen zuerst über unseren eigenen Server, sodass Simple Routing nur die Koordinaten erhält, nicht die IP-Adresse Ihres Geräts. Routenkoordinaten werden daher an die Server von Simple Routing in Deutschland gesendet und dort verarbeitet. Simple Routing bewahrt Kopien der Routenanfragen 24 Stunden lang und seine Sicherungen 30 Tage lang auf und löscht sie dann. Unser eigener Server zählt, wie viele Routen jedes Konto pro Stunde anfordert, damit kein einzelnes Konto den Routing-Dienst für alle aufbrauchen kann; diese Zählungen enthalten keine Koordinaten oder Orte.</li>
+<li><strong>Kartenkacheln</strong> (OpenFreeMap): der Kartenbereich, den Sie gerade ansehen, um die Karte selbst zu zeichnen.</li>
+<li><strong>Adresssuche</strong> (die integrierte Ortssuche Ihres Smartphones, die auf den meisten Android-Smartphones von Google bereitgestellt wird): der Text, den Sie eingeben, und ein Bereich um Ihre aktuelle Position, damit Orte in der Nähe zuerst vorgeschlagen werden.</li>
+<li><strong>Ortsnamen</strong> (der integrierte Geocoder Ihres Smartphones, der auf den meisten Android-Smartphones von Google bereitgestellt wird): Koordinaten, um sie in Straßen-, Orts- oder Bundesstaatsnamen umzuwandeln – Ihre aktuelle Position etwa einmal am Tag (um Ihren Bundesstaat für Kraftstoffpreise zu ermitteln, solange automatische Kraftstoffpreise eingeschaltet sind), die Standorte Ihrer gespeicherten Ladevorgänge einschließlich Ihres Zuhauses (um sie auf der Ladekarte zu beschriften), den ersten und letzten Punkt jeder geschäftlichen Fahrt (für den Fahrleistungsbericht) und Punkte, auf die Sie auf der Karte der Fahrtplanung tippen (oder Ihre aktuelle Position, wenn Sie mit der Standort-Schaltfläche dieser Karte den Startpunkt ausfüllen).</li>
+<li><strong>Benennung von Ladestationen</strong> (die Ladestationsverzeichnisse von NREL und Open Charge Map): die Koordinaten einer Ladestation, an der Sie ankommen, um das Ladenetz der Station für den Ladevorgang vorzuschlagen.</li>
+<li><strong>Höhendaten &amp; Wetter</strong> (Open-Elevation / der US-amerikanische National Weather Service): Routenkoordinaten, um die Fahrtdetails um Steigung und Wind zu ergänzen.</li>
+<li><strong>VIN-Dekodierung</strong> (NHTSA, ein Dienst der US-Regierung): die VIN, die Sie eingeben oder scannen, um die technischen Daten Ihres Fahrzeugs auszufüllen.</li>
+<li><strong>Window Sticker</strong> (Ford): Ihre VIN, nur wenn Sie auf <em>View Window Sticker</em> tippen; dadurch wird die Window-Sticker-Seite von Ford in Ihrem Browser geöffnet.</li>
+<li><strong>Kraftstoffpreise</strong> (EIA, ein Dienst der US-Regierung): Ihr Bundesstaat, um Ihre Ladekosten mit den örtlichen Benzinpreisen zu vergleichen.</li>
+<li><strong>Gebietsermittlung</strong> (FCC, ein Dienst der US-Regierung): Die Koordinaten gespeicherter Ladevorgänge – einschließlich der Ladevorgänge zu Hause – können einmalig geokodiert werden, um den US-Bundesstaat zu bestimmen, in dem sie stattfanden, für den oben genannten Vergleich mit den Benzinpreisen.</li>
+<li><strong>Scannen der Etiketten am Türrahmen</strong> (Google ML Kit, das auf Ihrem Smartphone läuft): Das Foto wird auf Ihrem Smartphone gelesen und niemals an Google gesendet; die daraus gelesenen Angaben werden mit Ihrem Fahrzeug gespeichert (siehe <em>Welche Daten die App erfasst</em>). Wie andere Google-Komponenten auf dem Gerät sendet ML Kit Google grundlegende Leistungs- und Nutzungsstatistiken – Gerätemodell und Android-Version, Name und Version der App, eine zufällige Kennung pro Installation, Zeitmessungen und Fehlercodes –, die Google zur Diagnose und zur Messung der Nutzung von ML Kit verwendet und nach eigenen Angaben nicht an andere weitergibt.</li>
+<li><strong>Community-Ladepreise</strong> (optional, standardmäßig eingeschaltet, in Settings (Einstellungen) abschaltbar): Wenn Sie einen Ladevorgang an einer öffentlichen Ladestation erfassen (auch an kostenlosen), können der Standort und das Ladenetz der Station, ihr Preis, die höchste Ladeleistung, die Stunde des Tages sowie die von Ihnen notierte Anzahl der Ladepunkte, der Steckertyp und die Annehmlichkeiten unter einer <strong>codierten Kennung</strong> zu einem gemeinsamen Community-Datensatz beigetragen werden – einem Einweg-Code, der aus Ihrer Konto-ID mit einem geheimen Schlüssel berechnet wird, der auf unserem Server bleibt. Diese Kennung ist niemals Ihre E-Mail-Adresse, Konto-ID oder VIN und wird anderen Nutzern niemals angezeigt. Kommentare, die Sie zu einem Ladevorgang eingeben, werden nicht beigetragen. Ladevorgänge an Ihrem gespeicherten Heimstandort oder solche, die als Zuhause gekennzeichnet sind, werden <strong>niemals</strong> beigetragen; speichern Sie den Standort Ihrer Heimladestation in der App (Garage → Charger), um sicherzugehen.</li>
+</ul>
+<p>Abgesehen von den oben beschriebenen ML-Kit-Statistiken ist keiner dieser Dienste ein Analyse- oder Werbedienst.</p>
+
+<h2>E-Mails</h2>
+<ul>
+<li><strong>Konto-E-Mails</strong> (versendet über unseren E-Mail-Zustelldienst Resend in den Vereinigten Staaten): Wenn Sie ein Konto mit E-Mail-Adresse und Passwort erstellen oder Ihr Passwort zurücksetzen, erhält Resend Ihre E-Mail-Adresse und den Einmalcode, ausschließlich um diese Nachricht zuzustellen.</li>
+<li><strong>Überwachungs-E-Mails an uns</strong> (ebenfalls über Resend): kurze E-Mails an uns, den Betreiber, über Abonnementereignisse – den Plan und seinen Preis, wie viele Tage das Konto alt ist, was wann geschehen ist – sowie Tagessummen. Wenn die Datenbank ungewöhnlich groß wird, nennt eine Warnung außerdem die wenigen Konten, die die meisten Daten speichern, anhand ihrer zufälligen Konto-ID und Größe. Diese E-Mails enthalten niemals Ihren Namen, Ihre E-Mail-Adresse, VIN, Ihren Standort oder Kaufkennungen.</li>
+<li>Wir senden Ihnen E-Mails nur zu Ihrem Konto und zum Dienst: Antworten auf Ihre Nachrichten und wesentliche Mitteilungen wie eine Preisänderung oder die Einstellung des Dienstes. Niemals Marketing.</li>
+</ul>
+
+<h2>Das Web-Dashboard</h2>
+<p>Unter <a href="https://gateeng.com/truemileev/app.html">gateeng.com/truemileev/app.html</a> können Sie Ihr eigenes Konto in einem Browser ansehen: dieselben Fahrten, Ladevorgänge, Berichte und Exporte wie in der App.</p>
+<ul>
+<li><strong>Die Anmeldung</strong> erfolgt mit Google oder mit Ihrer E-Mail-Adresse und Ihrem Passwort und wird von unserem Datenbankanbieter (Supabase) abgewickelt, wobei Konto-E-Mails wie unter <em>E-Mails</em> beschrieben zugestellt werden; die Anmeldung mit Google läuft über Google. Die Sitzung wird im Sitzungsspeicher (session storage) dieses Browser-Tabs gehalten. Verwenden Sie auf einem gemeinsam genutzten Computer <strong>Sign out</strong> (Abmelden): Das bloße Schließen des Tabs beendet die Sitzung möglicherweise nicht, weil Browser einen geschlossenen Tab wieder öffnen können. Das Dashboard meldet sich außerdem selbst ab und beendet die Sitzung auf unserer Seite, wenn es nach 4 Stunden ohne Nutzung erneut geöffnet wird.</li>
+<li><strong>Es liest Ihre Daten nur</strong>, mit einer Ausnahme: Account → Delete account (Konto → Konto löschen) löscht Ihr Konto genau so, wie es die App tut (siehe <em>Aufbewahrung und Löschung</em>).</li>
+<li><strong>Bleibt in Ihrem Browser</strong>: Anzeigeeinstellungen (Farbschema, Einheiten, das gewählte Fahrzeug), das Berichtsdesign und ein etwaiges Logo, das Sie hinzufügen, sowie alle Mitgliedschaften, die Sie auf der Seite „Financial“ eintragen, werden im lokalen Speicher Ihres Browsers auf diesem Computer gespeichert. Sie werden niemals an uns gesendet. CSV- und PDF-Downloads werden in Ihrem Browser erstellt.</li>
+<li><strong>Der einzige externe Dienst</strong> ist OpenFreeMap, das den Kartenbereich erhält, den Sie gerade ansehen, um die Karte zu zeichnen. Keine Cookies zum Tracking, keine Analyse, keine Werbung.</li>
+</ul>
+
+<h2>Ihre Uhr und der Bildschirm Ihres Autos</h2>
+<ul>
+<li><strong>Wear OS-Uhr.</strong> Die Smartphone-App sendet Ihrer Uhr Ihren Ladezustand, die Reichweite, Ihre Fahr- und Ladesummen, die laufende Fahrt mit dem aktuellen Standort des Autos und den Ort, an dem das Auto geparkt wurde, über die Wear OS Data Layer der Google Play-Dienste, die die Daten zwischen Ihrem eigenen Smartphone und Ihrer Uhr überträgt – über Bluetooth oder, wenn die beiden nicht direkt verbunden sind, über die Server von Google unter Ihrem Google-Konto. Nichts davon gelangt zu uns, und die Uhr-App sendet uns nichts.</li>
+<li><strong>Android Auto.</strong> Wenn Ihr Smartphone mit Android Auto verbunden ist, zeigt die App über die Android Auto-App von Google auf Ihrem Smartphone Ladestandorte und Ihre Lesezeichen auf dem Bildschirm des Autos an (Testversionen der App zeigen dort auch Live-Informationen zu Fahrt und Ladevorgang). Fotos von Ladestationen werden wie oben beschrieben von Open Charge Map geladen.</li>
+<li>Von der Uhr oder dem Bildschirm des Autos wird auf unserer Seite nichts gespeichert, was über das hinausgeht, was die Smartphone-App ohnehin in Ihrem Konto speichert.</li>
+</ul>
+
+<h2>Beta-Freiwillige</h2>
+<p>Wenn Sie sich freiwillig bereit erklären, uns dabei zu helfen, Unterstützung für Ihr Auto hinzuzufügen, schalten wir für Ihr Konto in der App eine <strong>Test session</strong> (Testsitzung) ein oder senden Ihnen eine Testversion der App, die eine solche enthält (Konten, die die App vor ihrer Markteinführung getestet haben, haben sie ebenfalls). Sie können sich entscheiden, uns die Datei zu senden, die eine Test session erstellt. Sie enthält die Messwerte und Fehlercodes Ihres Autos, wie die App sie gelesen hat, die VIN, das Fahrtprotokoll der Sitzung mit seiner GPS-Spur, das eigene Protokoll der App für diesen Tag und alle Notizen, die Sie eingegeben haben. Die Datei wird auf Ihrem Smartphone erstellt und verlässt es nur, wenn Sie sich entscheiden, sie per E-Mail an support@gateeng.com zu senden. Wir verwenden sie nur, um Unterstützung für Ihr Auto hinzuzufügen, und löschen sie innerhalb von 90 Tagen, nachdem Ihr Auto unterstützt wird oder die Beta-Phase endet.</p>
+
+<h2>Abonnements und Käufe</h2>
+<p>TrueMile EV bietet Pro- und Max-Abonnements an, die über Google Play verkauft werden.</p>
+<ul>
+<li><strong>Google Play wickelt die Zahlung ab.</strong> Ihre Karte oder andere Zahlungsmethode, Ihre Rechnungsadresse und die Belastung selbst werden vollständig von Google nach der eigenen Datenschutzerklärung von Google verarbeitet. Die App sieht, empfängt oder speichert niemals Kartennummern oder andere Zahlungsdaten.</li>
+<li><strong>Was die App speichert</strong>, damit sie den von Ihnen gekauften Plan freischalten kann, in derselben privaten Datenbank wie der Rest Ihres Kontos: das Google-Play-Kauftoken, die Bestell-ID, Produkt und Plan (zum Beispiel Pro mit jährlicher Abrechnung), den Status des Abonnements (aktiv, im Kulanzzeitraum, gekündigt, abgelaufen usw.), ob es mit einem Testzeitraum begann, ob es sich automatisch verlängert, und sein Ablauf- oder Verlängerungsdatum – sowie den eigenen Datensatz von Google Play zum Abonnement, wie Google ihn zurückgibt, der das Land des Kaufs, das Startdatum und, falls Sie kündigen, einen etwaigen Grund enthält, den Sie Google nennen. Die App prüft diese Angaben bei Google Play, um zu bestätigen, dass das Abonnement echt und aktuell ist.</li>
+<li><strong>Was die App bei einem Kauf an Google sendet</strong>: einen Einweg-Hash (SHA-256) Ihrer Konto-ID, übergeben als „obfuscated account ID“ (verschleierte Konto-ID) von Google Play, den Google zur Erkennung von Betrug und Missbrauch verwendet. Er kann nicht in Ihre Konto-ID zurückverwandelt werden und enthält niemals Ihre E-Mail-Adresse oder Ihren Namen.</li>
+<li><strong>Statusmeldungen von Google</strong>: Wenn ein Abonnement verlängert, gekündigt, erstattet wird oder abläuft, benachrichtigt Google Play den Server der App, der die Mitteilung nur verwendet, um Ihren Plan aktuell zu halten.</li>
+<li><strong>Unentgeltlich gewährte Pläne</strong> (zum Beispiel Pläne für Tester) werden von uns gewährt und sind mit keiner Zahlung verbunden; der Plan wird wie jeder andere Plan in Ihrem Konto vermerkt.</li>
+<li><strong>Kündigung</strong>: Verwalten oder kündigen Sie Ihr Abonnement in der Google Play Store-App → Zahlungen und Abos → Abos. <strong>Das Löschen Ihres TrueMile-Kontos kündigt kein Google-Play-Abonnement</strong> – kündigen Sie es zuerst in Google Play. Die Abonnementdatensätze der App werden mit Ihrem Konto gelöscht; Google bewahrt seine eigenen Kaufunterlagen nach seinen eigenen Richtlinien auf.</li>
+</ul>
+
+<h2>Was die App NICHT tut</h2>
+<ul>
+<li>Keine Werbung, keine Werbe-SDKs und keine Werbe-IDs.</li>
+<li>Kein Verkauf personenbezogener Daten an Datenhändler und keine Weitergabe an sie.</li>
+<li>Keine Analysedienste (kein Google Analytics, Firebase Analytics, Mixpanel usw.). Die einzigen Nutzungsstatistiken, die die App verlassen, sind die oben beschriebenen ML-Kit-Leistungsstatistiken, die die auf dem Gerät laufende Etiketten-Lesefunktion von Google an Google sendet.</li>
+<li>Kein Lesen von Kontakten, Nachrichten, Fotos (außer Fahrzeugfotos, die Sie in der App aufnehmen) oder von Daten, die nichts mit Fahren und Laden zu tun haben.</li>
+</ul>
+
+<h2>Aufbewahrung und Löschung</h2>
+<ul>
+<li>Ihre Cloud-Daten werden so lange aufbewahrt, wie Sie Ihr Konto behalten, sofern unten keine kürzere Frist angegeben ist.</li>
+<li><strong>Settings → Delete account</strong> (Einstellungen → Konto löschen) in der App oder <strong>Account → Delete account</strong> (Konto → Konto löschen) im Web-Dashboard entfernt Ihre personenbezogenen Cloud-Daten dauerhaft – Ihre Identität, E-Mail-Adresse, Anmeldedatensätze, Fahrten, Routen, GPS-Standorte, Heimkoordinaten, Ladestandorte, gespeicherten Orte, Preise und Kosten, Notizen, Einstellungen und erstellten Berichte –, mit Ausnahme der unten beschriebenen Datensätze.</li>
+<li>Das Löschen Ihres Kontos kündigt kein Google-Play-Abonnement; kündigen Sie es in Google Play.</li>
+<li>Durch die Deinstallation der App werden alle lokalen Daten vom Gerät entfernt.</li>
+<li>Absturzberichte tragen nur eine zufällige Installationskennung, niemals Ihr Konto, und werden nach 90 Tagen gelöscht.</li>
+<li>Routenanfragen (nur Koordinaten, niemals Ihr Konto) werden von unserem Routing-Anbieter Simple Routing 24 Stunden lang aufbewahrt; seine Sicherungen werden nach 30 Tagen verworfen.</li>
+<li>Die Anfrageprotokolle unseres Datenbank-Hosts erfassen die IP-Adresse und die Webadresse jeder Anfrage – die die Koordinaten einer Route, die VIN Ihres Fahrzeugs oder die ID eines Datensatzes enthalten kann – sowie das Konto, das die Anfrage gestellt hat; diese Protokolle werden bis zu 7 Tage lang aufbewahrt.</li>
+<li>Die stündlichen Routenzählungen pro Konto werden nach 3 Tagen gelöscht, unabhängig davon, ob Sie Ihr Konto löschen.</li>
+<li>Anmeldedatensätze (IP-Adresse und Geräte- oder Browsertyp) werden aufbewahrt, bis Sie Ihr Konto löschen; die Abmeldung vom Web-Dashboard entfernt den Datensatz dieses Browsers.</li>
+<li>Beiträge zu Community-Preisen tragen nur die oben beschriebene codierte Kennung, niemals Ihre E-Mail-Adresse, Konto-ID oder VIN, und verfallen automatisch innerhalb von 14 Tagen.</li>
+<li>Die oben beschriebenen täglichen Datensätze zu App-Öffnungen werden nach 13 Monaten gelöscht oder mit Ihrem Konto, falls Sie es früher löschen.</li>
+<li>Registrierungen, deren E-Mail-Adresse nie bestätigt wird, werden nach 30 Tagen gelöscht.</li>
+<li><strong>Sicherungen.</strong> Unser Datenbank-Host bewahrt Sicherungen bis zu 7 Tage lang auf, sodass von Ihnen gelöschte Daten in einer Sicherung verbleiben können, bis diese Sicherung verworfen wird.</li>
+<li>Wenn Sie Ihr Konto löschen, bewahren wir dessen zufällige Konto-ID und den Zeitpunkt der Löschung 35 Tage lang auf, und sonst nichts, damit wir das Konto erneut löschen könnten, falls wir jemals eine Sicherung wiederherstellen müssten.</li>
+</ul>
+
+<p><strong>Die Zustandsakte des Fahrzeugs bleibt beim Fahrzeug.</strong> Wenn Sie Ihr Konto löschen, wird eine Batterie- und Zustandshistorie aufbewahrt, die der VIN des Fahrzeugs zugeordnet ist – wie ein Serviceheft, das das Auto zu seinem nächsten Besitzer begleitet. Sie enthält keinen Namen, keine E-Mail-Adresse und kein Konto, ist aber <strong>nicht anonym</strong>: Eine VIN identifiziert genau ein bestimmtes Fahrzeug, und Zulassungs-, Versicherungs- oder Fahrzeughistoriendaten können eine VIN mit ihrem eingetragenen Halter verknüpfen. Sie enthält ausschließlich Fakten zum Fahrzeug:</p>
+<ul>
+<li>Der Steckbrief des Fahrzeugs: Marke, Modell, Baujahr, Größe des Batteriepakets und die Angaben, die die App vom Aufkleber am Türrahmen gelesen hat (Herstellungsdatum, Gewichtsangaben, Reifen- und Felgengrößen, Reifenfülldrücke bei kalten Reifen sowie die übrigen auf dem Etikett aufgedruckten Codes und Texte).</li>
+<li>Ladevorgänge mit tagesgenauem Datum: Kilometerstand, Batterieprozentsatz vor/nach dem Laden, hinzugefügte Energie, Dauer, Schnell- oder Normalladung, Außentemperatur und die Ladeleistungskurve.</li>
+<li>Messwerte zum Gesundheitszustand der Batterie (State of Health) nach Datum.</li>
+<li>Vom Fahrzeug ausgelesene Diagnose-Fehlercodes und Aufzeichnungen zur Bereifung.</li>
+</ul>
+<p>Nichts wird in sie übernommen aus Ihrem Namen, Ihrer E-Mail-Adresse oder Ihrem Konto; aus irgendeinem Standort; aus irgendwelchen Preis-, Kosten- oder Zahlungsinformationen; aus einer Fahrt oder Route; oder aus den Notizen, die Sie schreiben. Sie hat kein festgelegtes Enddatum. Sie können sie löschen lassen: Senden Sie uns die VIN per E-Mail an <a href="mailto:support@gateeng.com">support@gateeng.com</a>, und wir löschen diesen Datensatz, sobald Ihre Kontolöschung durchgeführt wurde. Der Datensatz wird erst erstellt, wenn das Konto gelöscht wird; eine Anfrage, die Sie vor dem Löschen Ihres Kontos senden, wird daher ausgeführt, nachdem die Löschung durchgeführt wurde.</p>
+
+<p class="note"><strong>Ein Code wird aufbewahrt, damit der Einführungszeitraum nicht neu gestartet werden kann.</strong> Neue Konten erhalten einen Einführungszeitraum (einen 14-tägigen Max-Testzeitraum), in dem jede Funktion freigeschaltet ist. Damit es bei einem Einführungszeitraum pro Fahrzeug bleibt, speichern wir einen Einweg-Code, der aus der VIN des Fahrzeugs und der Adresse des OBD-Adapters abgeleitet ist, zusammen mit einem Einweg-Code für das Konto, das ihn genutzt hat. Die Codes werden mit einem geheimen Schlüssel berechnet, der auf unserem Server bleibt. Sie enthalten weder die VIN noch die Adapteradresse noch die Konto-ID und können ohne diesen Schlüssel nicht in diese zurückverwandelt werden. Sie werden immer nur auf Gleichheit verglichen, sodass die einzige Frage, die sie beantworten, lautet: „Hatte dieses Fahrzeug bereits seinen Einführungszeitraum, und war es dasselbe Konto?“ Sie werden bis zu 90 Tage nach ihrer Erstellung aufbewahrt, auch über die Löschung des Kontos hinaus – darin liegt ihr Zweck –, und danach gelöscht. Sie werden niemals für Werbung, Profilbildung oder einen anderen Zweck verwendet.</p>
+
+<h2>Ihre Rechte und Wahlmöglichkeiten</h2>
+<ul>
+<li><strong>Auskunft.</strong> Sie können Ihre Daten in der App und im Web-Dashboard einsehen und herunterladen: My account › My data (Mein Konto › Meine Daten) in der App sowie die Downloads im Web-Dashboard. Sie können uns auch um eine Kopie dessen bitten, was wir über Sie gespeichert haben.</li>
+<li><strong>Berichtigung.</strong> Die meisten Datensätze können in der App berichtigt werden (zum Beispiel die Energie oder der Preis eines Ladevorgangs); für alles andere senden Sie uns eine E-Mail, und wir berichtigen es.</li>
+<li><strong>Löschung.</strong> Löschen Sie einzelne Fahrten in der App, Ihr gesamtes Konto in der App oder im Web-Dashboard oder alles andere per E-Mail (siehe <em>Aufbewahrung und Löschung</em>).</li>
+<li><strong>Widerruf der Einwilligung.</strong> Schalten Sie das Teilen von Community-Preisen unter Settings → My Account (Einstellungen → Mein Konto) aus, schalten Sie den Standortzugriff im Hintergrund in den Android-Einstellungen aus, oder löschen Sie Ihr Konto.</li>
+<li><strong>So stellen Sie eine Anfrage.</strong> Senden Sie eine E-Mail an <a href="mailto:support@gateeng.com">support@gateeng.com</a> von der E-Mail-Adresse, die Ihr Konto verwendet. Wir antworten innerhalb von 30 Tagen.</li>
+<li><strong>Beschwerden.</strong> Wenn Sie mit unserer Antwort nicht zufrieden sind, können Sie sich bei der Datenschutzbehörde an Ihrem Wohnort beschweren – in Kanada beim Office of the Privacy Commissioner of Canada; in Québec bei der Commission d'accès à l'information du Québec.</li>
+</ul>
+
+<h2>Kinder</h2>
+<p>Die App ist ein Werkzeug für Fahrzeugtelemetrie und richtet sich nicht an Kinder unter 13 Jahren.</p>
+
+<h2>Änderungen</h2>
+<p>Wenn sich diese Erklärung ändert, wird die aktualisierte Fassung unter dieser URL mit einem neuen Gültigkeitsdatum veröffentlicht.</p>
+
+<h2>Kontakt</h2>
+<p>Fragen oder Löschanträge: <strong><a href="mailto:support@gateeng.com">support@gateeng.com</a></strong><br>
+Gate Engineering LLC, 2501 Chatham Rd 8139, Springfield, IL 62704, USA</p>
+<p><strong>Für den Schutz personenbezogener Daten verantwortliche Person:</strong> der Inhaber von Gate Engineering LLC, der als deren Datenschutzbeauftragter (Privacy Officer) handelt, erreichbar unter <a href="mailto:support@gateeng.com">support@gateeng.com</a> oder unter der oben genannten Anschrift.</p>
+
+</main>
+<footer class="wrap">
+  <div>
+    <a href="https://gateeng.com/truemile-privacy/de/">Datenschutz</a>·
+    <a href="https://gateeng.com/truemile-terms/de/">Nutzungsbedingungen</a>·
+    <a href="https://gateeng.com/truemile-privacy/delete/de/">Konto löschen</a>·
+    <a href="https://gateeng.com">Gate Engineering</a>
+  </div>
+  <div style="margin-top:10px">© 2026 Gate Engineering LLC · 2501 Chatham Rd 8139, Springfield, IL 62704 · (331) 224-4919</div>
+</footer>
+</body></html>
