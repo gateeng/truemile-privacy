@@ -76,6 +76,8 @@ th{background:rgba(14,111,168,.08)}
 
 <p><strong>TrueMile EV</strong> est conçue et exploitée par Gate Engineering LLC. Cette page explique comment supprimer votre compte et vos données, ce qui est supprimé exactement, ainsi que le petit enregistrement, limité au véhicule, qui peut être conservé. La politique de confidentialité complète se trouve à l'adresse <a href="https://gateeng.com/truemile-privacy/fr/">gateeng.com/truemile-privacy/fr</a>.</p>
 
+<p class="note"><strong>Vous voulez d'abord une copie de vos données?</strong> Avec tous les forfaits, vous pouvez télécharger un rapport de ce que l'application vous affiche; avec les forfaits Pro et Max, vous pouvez télécharger l'ensemble de vos données. Quel que soit votre forfait, vous pouvez aussi nous demander, à <a href="mailto:support@gateeng.com">support@gateeng.com</a>, une copie complète de vos données dans un format courant et lisible par machine (CSV), sans frais; nous répondons dans un délai de 30 jours. Faites la demande avant de supprimer votre compte et attendez notre réponse&nbsp;: la suppression est définitive, et nous ne pourrons donc plus vous envoyer de copie par la suite.</p>
+
 <h2>Supprimer votre compte (dans l'application)</h2>
 <div class="box">
 <ol>
@@ -102,13 +104,13 @@ th{background:rgba(14,111,168,.08)}
 <table>
 <tr><th>Supprimé immédiatement avec votre compte</th><th>Conservé</th></tr>
 <tr><td>
-Votre identité de connexion (adresse courriel, nom, informations de connexion Google) et l'identifiant de votre compte · les enregistrements de connexion (adresse IP et type d'appareil) · chaque trajet et son tracé GPS · les séances de recharge et leurs emplacements, y compris l'emplacement de votre borne de recharge à domicile · tous les prix, coûts et tarifs que vous avez saisis · vos notes · les lieux enregistrés · les paramètres, les remorques enregistrées et les détails de l'adaptateur associé · les rapports de kilométrage générés · les enregistrements d'abonnement détenus par l'application
+Votre identité de connexion (adresse courriel, nom, informations de connexion Google) et l'identifiant de votre compte · les enregistrements de connexion (adresse IP et type d'appareil) · chaque trajet et son tracé GPS · les séances de recharge et leurs emplacements, y compris l'emplacement de votre borne de recharge à domicile · tous les prix, coûts et tarifs que vous avez saisis · vos notes · les lieux enregistrés · les paramètres, les remorques enregistrées et les détails de l'adaptateur associé · les rapports de kilométrage générés · les enregistrements d'abonnement détenus par l'application · les fichiers de séance de la version bêta et votre dossier de participation à la version bêta
 </td><td>
 <strong>Un historique d'entretien du véhicule, rattaché au numéro d'identification du véhicule (VIN)</strong> — comme un carnet d'entretien qui suit la voiture chez son prochain propriétaire&nbsp;: les caractéristiques du véhicule et les renseignements lus sur l'étiquette du montant de portière, les données de recharge datées au jour près, l'état de santé de la batterie, les codes de diagnostic et les dossiers relatifs aux pneus. Il ne contient ni nom, ni adresse courriel, ni compte, ni localisations, ni itinéraires, ni prix, ni notes, mais il n'est pas anonyme&nbsp;: un VIN identifie un véhicule, et d'autres personnes peuvent relier un VIN au titulaire de son immatriculation. <em>Vous ne voulez pas qu'il soit conservé? Envoyez-nous le VIN par courriel et nous le supprimerons une fois la suppression de votre compte effectuée (l'enregistrement n'est créé qu'à ce moment; une demande envoyée avant la suppression est donc exécutée après que la suppression a été effectuée).</em>
 <br><br>
 Un code à sens unique calculé au moyen d'une clé secrète à partir du VIN et de l'adresse de l'adaptateur (il ne contient ni l'un ni l'autre, et ne peut pas être reconverti en ces données sans cette clé), conservé jusqu'à 90 jours afin que la période d'introduction ne puisse pas être recommencée sur le même véhicule.
 <br><br>
-Les contributions aux prix communautaires (sous un identifiant codé, jamais votre adresse courriel, l'identifiant de votre compte ni votre VIN; elles expirent automatiquement dans un délai de 14 jours), les rapports de plantage (identifiés uniquement par un identifiant d'installation aléatoire, jamais par votre compte; supprimés après 90 jours) et les journaux de requêtes de notre hébergeur de base de données (l'adresse IP et l'adresse Web de chaque requête, qui peut contenir le VIN ou l'identifiant d'un enregistrement; conservés jusqu'à 7 jours).
+Les contributions aux prix communautaires (sous un identifiant codé, jamais votre adresse courriel, l'identifiant de votre compte ni votre VIN; elles expirent automatiquement dans un délai de 14 jours), les rapports de plantage (identifiés uniquement par un identifiant d'installation aléatoire, jamais par votre compte; supprimés après 90 jours), les journaux de requêtes de notre hébergeur de base de données (l'adresse IP et l'adresse Web de chaque requête, qui peut contenir le VIN ou l'identifiant d'un enregistrement; conservés jusqu'à 7 jours) et le journal de sécurité des connexions (adresse IP, adresse courriel et nom) pendant 90 jours au plus.
 </td></tr>
 </table>
 <p>Les données se trouvant sur le téléphone lui-même (base de données locale, paramètres, journaux) sont supprimées par la désinstallation de l'application.</p>
@@ -117,6 +119,7 @@ Les contributions aux prix communautaires (sous un identifiant codé, jamais vot
 <ul>
 <li><strong>Trajets individuels</strong>&nbsp;: ouvrez le trajet dans l'application et supprimez-le — la copie dans le nuage est également supprimée.</li>
 <li><strong>Contributions aux prix communautaires</strong>&nbsp;: désactivez-les à tout moment dans Settings → <strong>My Account</strong> [Paramètres → Mon compte] (les contributions passées ne portent qu'un identifiant codé et expirent d'elles-mêmes dans un délai de 14 jours).</li>
+<li><strong>Fichiers de séance de la version bêta</strong>&nbsp;: quittez la version bêta dans l'application (Garage › Diag › Leave the beta [Quitter la version bêta]) en choisissant <em>Also delete my session files now</em> (Supprimer aussi mes fichiers de séance maintenant); ils sont supprimés dans un délai d'un jour.</li>
 <li><strong>Toute autre donnée</strong> (par exemple une séance de recharge précise)&nbsp;: écrivez à <a href="mailto:support@gateeng.com">support@gateeng.com</a> à partir de l'adresse courriel de votre compte, et elle sera supprimée pour vous.</li>
 </ul>
 
